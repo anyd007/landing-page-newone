@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pl">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>Andrzej Gębala Landing page</title>
+        <meta name="description" content="Landing page, początkujący Front-end dev, moja wizytówka">
+        <meta name="keywords" content="landing page, wizytówka, Front-end developer, IT">
+        <meta name="author" content="Andrzej Gębala">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css?family=Allan&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./style.css">
+      <style> @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); </style>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>tytuł strony</h1>
+            <nav>
+                <ul>
+                    <li id="nav-about-me">o mnie</li>
+                    <li id="nav-tasks">moje ćwiczenienia</li>
+                    <li id="nav-links">moje linki</li>
+                    <li id="nav-message">zostaw wiadomość</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h2>o mnie</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. Tristique senectus et netus et malesuada fames. Nibh tellus molestie nunc non blandit 
+                massa enim nec. Ultrices gravida dictum fusce ut placerat. Malesuada proin libero nunc consequat interdum varius 
+                sit amet mattis. Orci dapibus ultrices in iaculis. Enim sed faucibus turpis in eu. Id donec ultrices tincidunt arcu
+                 non sodales neque. Leo a diam sollicitudin tempor id. Dictum varius duis at consectetur lorem donec massa. Sed sed 
+                 risus pretium quam. Consequat interdum varius sit amet mattis vulputate. In ornare quam viverra orci sagittis eu volutpat. 
+                 Elementum nibh tellus molestie nunc non blandit. Nisl vel pretium lectus quam id leo in vitae. Feugiat nisl pretium fusce id 
+                 velit ut tortor pretium viverra. Mattis pellentesque id nibh tortor id aliquet lectus proin.
+            </p>
+        </section>
+        <section id="my-tasks">
+            <h2>moje zadania</h2>
+        </section>
+        <section id="my-links">
+            <h2>moje linki</h2>
+            <ul>
+            <li>
+                <a target="blank" href="https://github.com/anyd007">github<br>
+                    <i class="fab fa-github fa-3x"></i></a>
+            </li>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/andrzej-gebala">linkedin<br>
+                    <i class="fab fa-linkedin fa-3x"></i></a>
+            </li>
+            <li>
+                <a target="blank" href="https://facebook.com/Andrzej0007">facebook<br>
+                    <i href="https://facebook.com/Andrzej0007" class="fab fa-facebook fa-3x"></i></a>
+            </li>
+            </ul>
+        </section>
+        <section id="messagge">
+            <h2>zostaw wiadomość</h2>
+            <form id="form-main" onsubmit="return false" id="main-form">
+                <label for="name-input">podaj swoje imię</label>
+            <input type="text" id="name-input" name="name-input" placeholder="imię..."><br>
+            <label for="email-input">podaj swój e-mail</label>
+            <input type="text" id="email-input" name="email-input" placeholder="e-mail..."><br>
+            <textarea id="leave-messagge" name="leave-messagge" placeholder="zostaw wiadomość...." ></textarea>
+            <p id="warrning"></p>
+            <button id="send-btn">wyślij</button>
+
+            </form>
+        </section>
+        <footer></footer>
+    <script src="./script.js"></script>
+    </body>
+</html>
