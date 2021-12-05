@@ -1,4 +1,10 @@
-*{
+html{
+    /* overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh; */
+    scroll-behavior: smooth;
+}
+*{ 
     padding: 0;
     box-sizing: border-box;
     margin-top: 15px;
@@ -8,7 +14,7 @@ header{
     text-align: center;
    }
    h1{
-       font-size: 50px;
+       font-size: 80px;
        margin: 0;
    }
    nav{
@@ -38,7 +44,8 @@ header nav ul li:hover{
 }
  @media screen and (max-width: 500px) {
     header nav ul li,
-    #my-links ul li a{
+    #my-links ul li a,
+    tr, td{
         float: none;
     display: block;
     width: 100%;
@@ -118,7 +125,7 @@ input {
 label{
     font-size: 30px;
 }
-button{
+form button{
     width: 10%;
 text-align: center;
 margin: 0 auto;
@@ -129,3 +136,58 @@ border: 3px solid gray;
 border-radius: 10px;
 margin-bottom: 10px;
 }
+#scroll-up{
+    height: 80px;
+    width: 80px;
+    display: none;
+    position: fixed;
+    left: 90%;
+    bottom: 15%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid gray;
+    box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1), 0 6px 10px 0 rgba(0, 0, 0, 0.6);
+    animation: 1.5s fadeIn;
+    justify-content: center;
+   }
+   @keyframes fadeIn{
+       0% {opacity: 0;
+            transform: translateX(100px);}
+       100% {opacity: 1;
+            transform: translate(0px);}
+   }
+   table{
+       width: 80%;
+       margin: 0 auto;
+   }
+   .img-table{
+       height: 200px;
+       width: auto;
+   }
+   tr, td{
+        padding: 0;
+       border: 1px solid black;
+       border-radius: 10px;
+       cursor: pointer;
+       background-color: lightgrey;
+       /* filter: grayscale(100%); */
+       }
+   tr, td:hover{
+       /* filter: grayscale(0%); */
+    animation: zoom-in 1.2s;
+   }
+   @keyframes zoom-in{
+       0%{
+           transform: scale(1);
+           
+       }
+       50%{
+           transform: scale(1.3);
+       }
+       100%{
+           transform: scale(1);
+       }
+   }
+
+  
