@@ -23,21 +23,30 @@ h1 {
 }
 #triangle-left{
   position: absolute;
-  left: 0;
+  left: -350px;
   z-index: -1;
   width: 0;
   height: 0;
-  border-bottom: 170px solid #00FFFF;
+  border-bottom: 185px solid #00FFFF;
   border-right: 220px solid transparent;
+  transition: transform 3s;
+}
+.triangle-left-show{
+  transform: translateX(350px)
 }
 #triangle-right{
   position: absolute;
-  right: 0;
+  right: 0%;
+  top: -350px;
   z-index: -1;
   width: 0;
   height: 0;
-  border-bottom: 170px solid #00FFFF;
+  border-bottom: 185px solid #00FFFF;
   border-left: 220px solid transparent;
+  transition: transform 3s;
+}
+.triangle-right-show{
+  transform: translateY(350px);
 }
 nav {
   margin-top: -30px;

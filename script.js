@@ -18,6 +18,8 @@ let taskTableData;
 let cvMainContener;
 let cvUpload;
 let cvViev;
+let triangleLeft;
+let triangleRight;
 
 const main = () => {
   DOMCreateElements();
@@ -45,6 +47,8 @@ const DOMCreateElements = () => {
   cvMainContener = document.querySelector('.my-cv');
   cvUpload = document.querySelector('#cv-upload');
   cvViev = document.querySelector('#cv-view');
+  triangleLeft = document.querySelector('#triangle-left');
+  triangleRight = document.querySelector('#triangle-right');
 
 };
 
@@ -67,6 +71,12 @@ const scrollButton = () => {
     scrollUpBtn.style.display = "none";
   }
 };
+const animationShow = () =>{
+  
+    triangleLeft.classList.add('triangle-left-show')
+    triangleRight.classList.add('triangle-right-show')
+  
+}
 const handleToTop = () => {
   document.documentElement.scrollTop = 0;
 };
@@ -82,9 +92,15 @@ const cvTrack = e =>{
     }
     download('./obrazy/dokumenty/Andrzej_Gębala_CV_IT.pdf', 'Andrzej_Gębala_CV')
   }
-
-  
 }
+const inputCheck = ()=>{
+  nameInput.style.backgroundColor = 'white';
+  emailInput.style.backgroundColor = 'white';
+  messaggeInputs.forEach(el => {
+    if(el.value === ''){
+      el.style.backgroundColor = 'red'
+    }
+  })};
 
 const showTask = (e) => {
   if (e.target.matches(".show-day")) {
@@ -114,6 +130,8 @@ const DOMCreateEvents = () => {
   scrollUpBtn.addEventListener("click", handleToTop);
   taskTable.addEventListener("click", showTask);
   cvMainContener.addEventListener('click', cvTrack);
+  contactSendBtn.addEventListener('click', inputCheck);
+  window.addEventListener('DOMContentLoaded', animationShow)
 };
 
 
