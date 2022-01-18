@@ -53,9 +53,21 @@ header nav ul li:hover {
 }
 section {
   text-align: center;
+  margin-bottom: 100px;
 }
 h2 {
   font-size: 43px;
+}
+.my-skills{
+  width: 100%;
+}
+.skill{
+  width: 20%;
+  float: left;
+}
+h4{
+  font-size: 40px;
+  margin: 0%;
 }
 #my-links {
   width: 100%;
@@ -85,7 +97,7 @@ a:hover {
 #about p {
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   font-size: 28px;
 }
 form {
@@ -127,6 +139,7 @@ form button {
   margin-bottom: 10px;
 }
 #scroll-up {
+  z-index: 100;
   height: 80px;
   width: 80px;
   display: none;
@@ -162,8 +175,7 @@ form button {
     opacity: 0;
 } */
 table{
-  /* position: relative; */
-  border-spacing: 15px;
+  /* border-spacing: 15px; */
   width: 80%;
   margin: 0 auto;
 }
