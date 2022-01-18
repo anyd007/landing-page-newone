@@ -15,6 +15,9 @@ let contactSendBtn;
 let scrollUpBtn;
 let taskTable;
 let taskTableData;
+let cvMainContener;
+let cvUpload;
+let cvViev;
 
 const main = () => {
   DOMCreateElements();
@@ -39,6 +42,10 @@ const DOMCreateElements = () => {
   scrollUpBtn = document.querySelector("#scroll-up");
   taskTable = document.querySelector("table")
   taskTableData = document.querySelectorAll("td");
+  cvMainContener = document.querySelector('.my-cv');
+  cvUpload = document.querySelector('#cv-upload');
+  cvViev = document.querySelector('#cv-view');
+
 };
 
 const naviScroll = (e) => {
@@ -63,6 +70,11 @@ const scrollButton = () => {
 const handleToTop = () => {
   document.documentElement.scrollTop = 0;
 };
+const cvTrack = e =>{
+  if(e.target.matches('#cv-view')){
+    window.open('./obrazy/dokumenty/Andrzej_Gębala_CV_IT.pdf');
+  }
+}
 
 const showTask = (e) => {
   if (e.target.matches(".show-day")) {
@@ -91,6 +103,7 @@ const DOMCreateEvents = () => {
   window.addEventListener("scroll", scrollButton);
   scrollUpBtn.addEventListener("click", handleToTop);
   taskTable.addEventListener("click", showTask);
+  cvMainContener.addEventListener('click', cvTrack);
 };
 
 

@@ -245,4 +245,14 @@ td:hover {
   
   }
 }
-
+button{
+  transition: box-shadow 0.5s;
+}
+button:active{
+  opacity: 0.8;
+  box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 2.5), 0 8px 25px 0 rgba(0, 0, 0, 1.6);
+  background-color: crimson;
+}
+button:hover{
+  box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
