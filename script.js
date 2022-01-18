@@ -20,6 +20,7 @@ let cvUpload;
 let cvViev;
 let triangleLeft;
 let triangleRight;
+let aboutAnimation;
 
 const main = () => {
   DOMCreateElements();
@@ -49,6 +50,7 @@ const DOMCreateElements = () => {
   cvViev = document.querySelector('#cv-view');
   triangleLeft = document.querySelector('#triangle-left');
   triangleRight = document.querySelector('#triangle-right');
+  aboutAnimation = document.querySelector('.about-effect')
 
 };
 
@@ -71,10 +73,17 @@ const scrollButton = () => {
     scrollUpBtn.style.display = "none";
   }
 };
-const animationShow = () =>{
+const animationHeaderShow = () =>{
   
     triangleLeft.classList.add('triangle-left-show')
     triangleRight.classList.add('triangle-right-show')
+  
+}
+const aboutAnimationShow = () =>{
+  let scrolled = window.scrollY
+    if(scrolled > 100){
+      aboutAnimation.classList.add('about-effect-show')
+    }
   
 }
 const handleToTop = () => {
@@ -131,7 +140,8 @@ const DOMCreateEvents = () => {
   taskTable.addEventListener("click", showTask);
   cvMainContener.addEventListener('click', cvTrack);
   contactSendBtn.addEventListener('click', inputCheck);
-  window.addEventListener('DOMContentLoaded', animationShow)
+  window.addEventListener('DOMContentLoaded', animationHeaderShow);
+  window.addEventListener('scroll', aboutAnimationShow);
 };
 
 

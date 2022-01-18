@@ -29,7 +29,7 @@ h1 {
   height: 0;
   border-bottom: 185px solid #00FFFF;
   border-right: 220px solid transparent;
-  transition: transform 3s;
+  transition: transform 2.5s;
 }
 .triangle-left-show{
   transform: translateX(350px)
@@ -43,7 +43,7 @@ h1 {
   height: 0;
   border-bottom: 185px solid #00FFFF;
   border-left: 220px solid transparent;
-  transition: transform 3s;
+  transition: transform 2.5s;
 }
 .triangle-right-show{
   transform: translateY(350px);
@@ -128,12 +128,28 @@ a:hover {
     1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
     1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
-
+#about{
+  position: relative;
+}
 #about p {
   margin: 0 auto;
   width: 70%;
   margin-bottom: 30px;
   font-size: 35px;
+}
+.about-effect{
+  left: -900px;
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  height: 80%;
+  background-color: #00FFFF;
+  /* transform: skew(-20deg); */
+  transition: transform 2s;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.about-effect-show{
+  transform: translateX(900px);
 }
 form {
   margin: 0 auto;
