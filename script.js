@@ -73,7 +73,17 @@ const handleToTop = () => {
 const cvTrack = e =>{
   if(e.target.matches('#cv-view')){
     window.open('./obrazy/dokumenty/Andrzej_Gębala_CV_IT.pdf');
+  }else if(e.target.matches('#cv-upload')){
+    let download = (fileUrl, fileName)=>{
+    let a = document.createElement('a')
+    a.href = fileUrl
+    a.setAttribute('download', fileName)
+    a.click()
+    }
+    download('./obrazy/dokumenty/Andrzej_Gębala_CV_IT.pdf', 'Andrzej_Gębala_CV')
   }
+
+  
 }
 
 const showTask = (e) => {
