@@ -13,12 +13,38 @@ html {
 header {
   text-align: center;
 }
+.header-effect{
+position: relative;
+}
 h1 {
   font-size: 80px;
   margin: 0;
+  margin-bottom: 0%;
+}
+#triangle-left{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-bottom: 170px solid #00FFFF;
+  border-right: 220px solid transparent;
+}
+#triangle-right{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-bottom: 170px solid #00FFFF;
+  border-left: 220px solid transparent;
 }
 nav {
+  margin-top: -30px;
   width: 100%;
+}
+.nav-list{
+  margin-top: 0%;
 }
 header nav ul {
   border: 3px;
@@ -96,9 +122,9 @@ a:hover {
 
 #about p {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 35px;
 }
 form {
   margin: 0 auto;
