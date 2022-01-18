@@ -13,6 +13,8 @@ let emailInput;
 let textera;
 let contactSendBtn;
 let scrollUpBtn;
+let taskTable;
+let taskTableData;
 
 const main = () => {
   DOMCreateElements();
@@ -20,7 +22,7 @@ const main = () => {
 };
 
 const DOMCreateElements = () => {
-  navMain = document.querySelector('nav')
+  navMain = document.querySelector("nav");
   navAboutMe = document.querySelector("#nav-about-me");
   navTasks = document.querySelector("#nav-tasks");
   navLinks = document.querySelector("#nav-links");
@@ -34,45 +36,61 @@ const DOMCreateElements = () => {
   emailInput = document.querySelector("#email-input");
   textera = document.querySelector("#leave-messagge");
   contactSendBtn = document.querySelector("#send-btn");
-  scrollUpBtn = document.querySelector('#scroll-up');
-
-
+  scrollUpBtn = document.querySelector("#scroll-up");
+  taskTable = document.querySelector("table")
+  taskTableData = document.querySelectorAll("td");
 };
 
-const naviScroll  = (e) =>{
-    if(e.target.matches("#nav-about-me")){
-        sectionAbout.scrollIntoView({block:"center", inline:"center"})
-    }
-     else if(e.target.matches("#nav-tasks")){
-        sectionTasks.scrollIntoView({block:"center", inline:"center"})
-    }
-    else if(e.target.matches("#nav-links")){
-        sectionLinks.scrollIntoView({block:"center", inline:"center"})
-    }
-    else if(e.target.matches('#nav-message')){
-        sectionContact.scrollIntoView({block:"center", inline:"center"})
-    }
-}
-const scrollButton = () =>{
-    let scrolled = window.scrollY
-    if(scrolled >200){
-        scrollUpBtn.style.display = 'flex'
-    }else{
-        scrollUpBtn.style.display = 'none'
-        
-    }
-}
-const handleToTop = () =>{
-    document.documentElement.scrollTop = 0;                                                                                                      
-}
+const naviScroll = (e) => {
+  if (e.target.matches("#nav-about-me")) {
+    sectionAbout.scrollIntoView({ block: "center", inline: "center" });
+  } else if (e.target.matches("#nav-tasks")) {
+    sectionTasks.scrollIntoView({ block: "center", inline: "center" });
+  } else if (e.target.matches("#nav-links")) {
+    sectionLinks.scrollIntoView({ block: "center", inline: "center" });
+  } else if (e.target.matches("#nav-message")) {
+    sectionContact.scrollIntoView({ block: "center", inline: "center" });
+  }
+};
+const scrollButton = () => {
+  let scrolled = window.scrollY;
+  if (scrolled > 200) {
+    scrollUpBtn.style.display = "flex";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
+};
+const handleToTop = () => {
+  document.documentElement.scrollTop = 0;
+};
 
+const showTask = (e) => {
+  if (e.target.matches(".show-day")) {
+    window.open("https://laughing-villani-8ad083.netlify.app/");
+  } else if (e.target.matches(".cars")) {
+    window.open("https://vigilant-kilby-67c922.netlify.app/");
+  } else if (e.target.matches(".form")) {
+    window.open("https://practical-kare-7e5ace.netlify.app/");
+  } else if (e.target.matches(".lottery-game")) {
+    window.open("https://dreamy-hugle-b6f4f9.netlify.app/");
+  } else if (e.target.matches(".to-do")) {
+    window.open("https://nervous-visvesvaraya-455618.netlify.app/");
+  } else if (e.target.matches(".weather-api")) {
+    window.open("https://gracious-albattani-650a6b.netlify.app/");
+  } else if (e.target.matches(".react-to-do")) {
+    window.open("https://sharp-jackson-d396f4.netlify.app/");
+  }else if (e.target.matches('.react-form')) {
+    window.open('https://xenodochial-mahavira-42d0e4.netlify.app');
+  }
+};
 
 
 
 const DOMCreateEvents = () => {
-navMain.addEventListener('click', naviScroll)
-window.addEventListener('scroll', scrollButton)
-scrollUpBtn.addEventListener('click', handleToTop)
+  navMain.addEventListener("click", naviScroll);
+  window.addEventListener("scroll", scrollButton);
+  scrollUpBtn.addEventListener("click", handleToTop);
+  taskTable.addEventListener("click", showTask);
 };
 
 

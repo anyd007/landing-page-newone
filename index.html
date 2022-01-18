@@ -13,12 +13,12 @@
       <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./style.css">
       <style> @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); </style>
-        <link rel="stylesheet" href="./style.css">
+    
     </head>
 
     <body>
         <header>
-            <h1>tytuł strony</h1>
+            <h1>andrzej gębala<br/> portfolio</h1>
             <nav>
                 <ul class="nav-list">
                     <li id="nav-about-me">o mnie</li>
@@ -30,51 +30,53 @@
         </header>
         <section id="about">
             <h2>o mnie</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Tristique senectus et netus et malesuada fames. Nibh tellus molestie nunc non blandit 
-                massa enim nec. Ultrices gravida dictum fusce ut placerat. Malesuada proin libero nunc consequat interdum varius 
-                sit amet mattis. Orci dapibus ultrices in iaculis. Enim sed faucibus turpis in eu. Id donec ultrices tincidunt arcu
-                 non sodales neque. Leo a diam sollicitudin tempor id. Dictum varius duis at consectetur lorem donec massa. Sed sed 
-                 risus pretium quam. Consequat interdum varius sit amet mattis vulputate. In ornare quam viverra orci sagittis eu volutpat. 
-                 Elementum nibh tellus molestie nunc non blandit. Nisl vel pretium lectus quam id leo in vitae. Feugiat nisl pretium fusce id 
-                 velit ut tortor pretium viverra. Mattis pellentesque id nibh tortor id aliquet lectus proin.
-            </p>
-        </section>
-        <section id="my-tasks">
+            <p><strong>Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, 
+                czyli pracę na stanowisku Front-End Developera. Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
+                dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
+                dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
+                związane z programowaniem i obsługą komputera.
+                </strong><br/>
+                <i style="float: right;"><strong>"pisz kod tak, jakby gość, który go dostanie, był agresywnym psychopatą,
+                     który wie, gdzie mieszkasz."</strong></i></p>
+                    <p style="text-align: right;"><i style="float: inline-end;">Martin Golding</i></p> 
+                    </section>
+        <section class="scrollFade" id="my-tasks">
             <h2>moje ćwiczenia</h2>
-            <table>
+            <table id="tasks-table">
             <tr>
-                <td>
-                    <img src="./obrazy/day-show.jpg" alt="walidator dnia" class="img-table"><br>
-                    sdfds</td>
-                <td>
-                    <img src="./obrazy/cars.jpg" alt="ćwiczenia na obiektach i klasach" class="img-table" ><br>
-                    sdfsd</td>
-                <td>
-                    <img src="./obrazy/form.jpg" alt="formularz" class="img-table"><br>
-                    dsdsf</td>
+                <td class="show-day"> 
+                    <img src="./obrazy/day-show.jpg" alt="walidator dnia" class="img-table show-day"><br>
+                    obecny dzień i ciekawostka</td>
+                <td class="cars"> 
+                    <img src="./obrazy/cars.jpg" alt="ćwiczenia na obiektach i klasach" class="img-table cars" ><br>
+                    wyświetlanie zdjęcia auta i obliczanie kosztów trasy</td>
+                <td class="form">
+                    <img src="./obrazy/form.jpg" alt="formularz" class="img-table form"><br>
+                    formularz kontaktowy</td>
             </tr>
             <tr>
-                <td>
-                    <img src="./obrazy/lottery-game.jpg" alt="losowanie cyfry" class="img-table"><br>
-                    sdfsf</td>
-                <td>
-                    <img src="./obrazy/to-do-lista.jpg" alt="lista zadań" class="img-table"><br>
-                    sdfdsf</td>
-                <td>
-                    <img src="./obrazy/weather-API-photo.jpg" alt="aplikacja pogodowa" class="img-table"><br>
-                    sdfdsfds</td>
+                <td class="lottery-game">
+                    <img src="./obrazy/lottery-game.jpg" alt="losowanie cyfry" class="img-table lottery-game"><br>
+                    gra - losowe liczby</td>
+                <td class="to-do">
+                <img src="./obrazy/to-do-lista.jpg" alt="lista zadań" class="img-table to-do"><br>
+                    lista zadań</td>
+                <td class="weather-api">
+                    <img src="./obrazy/weather-API-photo.jpg" alt="aplikacja pogodowa" class="img-table weather-api"><br>
+                    pogoda wg podanej lokalizacji</td>
             </tr>
             <tr>
-                <td>
-                    <img src="./obrazy/react-to-do.jpg" alt="reactowa lista zadań" class="img-table"><br>
-                    sdfdsf</td>
+                <td class="react-to-do">
+                    <img src="./obrazy/react-to-do.jpg" alt="reactowa lista zadań" class="img-table react-to-do"><br>
+                    reactowa lista zadań (w budowie)</td>
+                <td class="react-form">
+                    <img src="./obrazy/react-form.jpg" alt="reactowy formularz" class="img-table react-form"><br>
+                    reactowy arkusz formularza (w budowie)</td>
             </tr>
             </table>
 
         </section>
-        <section id="my-links">
+        <section class="scrollFade" id="my-links">
             <h2>moje linki</h2>
             <ul>
             <li>
@@ -91,7 +93,7 @@
             </li>
             </ul>
         </section>
-        <section id="messagge">
+        <section class="scrollFade" id="messagge">
             <h2>zostaw wiadomość</h2>
             <form id="form-main" onsubmit="return false" id="main-form">
                 <label for="name-input">podaj swoje imię</label>
@@ -107,5 +109,6 @@
         <button id="scroll-up"><i class="fas fa-arrow-up fa-2x"></i></button>
         <footer></footer>
     <script src="./script.js"></script>
+    <script src="./scrollfade-0.1.js"></script>
     </body>
 </html>
