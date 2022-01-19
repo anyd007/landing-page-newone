@@ -22,7 +22,9 @@ let triangleLeft;
 let triangleRight;
 let aboutAnimation;
 let tasksAnimation;
-let linksAnimation
+let linksAnimation;
+let navAllTags;
+let navList;
 
 const main = () => {
   DOMCreateElements();
@@ -31,8 +33,10 @@ const main = () => {
 
 const DOMCreateElements = () => {
   navMain = document.querySelector("nav");
-  navAboutMe = document.querySelector("#nav-about-me");
-  navTasks = document.querySelector("#nav-tasks");
+  navAllTags = document.querySelectorAll('.nav-li');
+  navList = document.querySelector('.nav-list');
+  navAboutMe = document.querySelector("#navAboutMe");
+  navTasks = document.querySelector("#navTasks");
   navLinks = document.querySelector("#nav-links");
   navContact = document.querySelector("#nav-message");
   sectionAbout = document.querySelector("#about");
@@ -55,13 +59,25 @@ const DOMCreateElements = () => {
   aboutAnimation = document.querySelector('.about-effect');
   tasksAnimation = document.querySelector('.tasks-effect');
   linksAnimation = document.querySelector('.links-effect');
-
 };
+const navEffecttRemove = () =>{
+    navAllTags.forEach(el =>{
+      el.style.filter = 'blur(0px)'
+    })}
+function navEffect(e){
+  let style = e.target.style.filter = 'blur(0px)'
+  e.target.matches('.nav-list') ? style : null
+}
+const navBlur = () =>{
+  navAllTags.forEach(el =>{
+    el.style.filter = 'blur(2px)'
+})
+}
 
 const naviScroll = (e) => {
-  if (e.target.matches("#nav-about-me")) {
+  if (e.target.matches("#navAboutMe")) {
     sectionAbout.scrollIntoView({ block: "center", inline: "center" });
-  } else if (e.target.matches("#nav-tasks")) {
+  } else if (e.target.matches("#navTasks")) {
     sectionTasks.scrollIntoView({ block: "center", inline: "center" });
   } else if (e.target.matches("#nav-links")) {
     sectionLinks.scrollIntoView({ block: "center", inline: "center" });
@@ -69,6 +85,7 @@ const naviScroll = (e) => {
     sectionContact.scrollIntoView({ block: "center", inline: "center" });
   }
 };
+  
 const scrollButton = () => {
   let scrolled = window.scrollY;
   if (scrolled > 200) {
@@ -76,13 +93,11 @@ const scrollButton = () => {
   } else {
     scrollUpBtn.style.display = "none";
   }
-};
-const animationHeaderShow = () =>{
-  
-    triangleLeft.classList.add('triangle-left-show')
-    triangleRight.classList.add('triangle-right-show')
-  
 }
+const animationHeaderShow = () =>{
+   triangleLeft.classList.add('triangle-left-show')
+    triangleRight.classList.add('triangle-right-show')
+  }
 const aboutAnimationShow = () =>{
   let scrolled = window.scrollY
     if(scrolled > 100){
@@ -142,6 +157,9 @@ const showTask = (e) => {
 
 
 const DOMCreateEvents = () => {
+  navMain.addEventListener('mouseover', navBlur)
+  navMain.addEventListener('mouseleave', navEffecttRemove)
+  navMain.addEventListener("mouseover", navEffect);
   navMain.addEventListener("click", naviScroll);
   window.addEventListener("scroll", scrollButton);
   scrollUpBtn.addEventListener("click", handleToTop);

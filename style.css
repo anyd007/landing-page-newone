@@ -63,14 +63,15 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li {
+  background-color:#00FFFF;
   border-radius: 5%;
   margin-bottom: 70px;
   border-style: groove;
   cursor: pointer;
   width: 25%;
-  padding: 15px;
+  padding: 10px;
   float: left;
-  font-size: 25px;
+  font-size: 30px;
   transition: box-shadow 0.5s;
 }
 header nav ul li:hover {
@@ -241,7 +242,7 @@ form button,
   margin-top: -20px;
   z-index: -1;
   position: absolute;
-  left: 1700px;
+  left: 2200px;
   width: 90%;
   height: 80%;
   background-color: #00FFFF;
