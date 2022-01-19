@@ -2,6 +2,9 @@ html {
   
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -108,6 +111,7 @@ h4{
   width: 100%;
 }
 #my-links ul {
+  position: relative;
   list-style-type: none;
 }
 #my-links ul li {
@@ -128,6 +132,20 @@ a:hover {
     1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
     1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
+.links-effect{
+  margin-top: -50px;
+  z-index: -1;
+  position: absolute;
+  background-color: #00FFFF;
+  left: -900px;
+  width: 70%;
+  height: 40%;
+transition: transform 2.5s;
+clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.links-effect-show{
+  transform: translateX(900px);
+}
 #about{
   position: relative;
 }
@@ -146,7 +164,7 @@ a:hover {
   background-color: #00FFFF;
   /* transform: skew(-20deg); */
   transition: transform 2s;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 .about-effect-show{
   transform: translateX(900px);
@@ -156,9 +174,11 @@ form {
   width: 80%;
   border-radius: 20px;
   transition: box-shadow 1s;
+  transition: background-color 1s;
 }
 
 form:hover {
+  background-color: #00FFFF;
   opacity: 0.8;
   box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
@@ -217,17 +237,22 @@ form button,
     transform: translate(0px);
   }
 }
-
-/* .section{
-    display: block;
-    clear: both;
-    opacity: 1;
-    transition: opacity 2s ease;
+.tasks-effect{
+  margin-top: -20px;
+  z-index: -1;
+  position: absolute;
+  left: 1700px;
+  width: 90%;
+  height: 80%;
+  background-color: #00FFFF;
+ clip-path: inset(0 0 70% 0);
+ transition: transform 2.5s;
 }
-.hidden{
-    opacity: 0;
-} */
+.tasks-effect-show{
+  transform: translateX(-1630px);
+}
 table{
+  position: relative;
   /* border-spacing: 15px; */
   width: 80%;
   margin: 0 auto;

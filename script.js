@@ -21,6 +21,8 @@ let cvViev;
 let triangleLeft;
 let triangleRight;
 let aboutAnimation;
+let tasksAnimation;
+let linksAnimation
 
 const main = () => {
   DOMCreateElements();
@@ -51,6 +53,8 @@ const DOMCreateElements = () => {
   triangleLeft = document.querySelector('#triangle-left');
   triangleRight = document.querySelector('#triangle-right');
   aboutAnimation = document.querySelector('.about-effect')
+  tasksAnimation = document.querySelector('.tasks-effect')
+  linksAnimation = document.querySelector('.links-effect')
 
 };
 
@@ -83,6 +87,10 @@ const aboutAnimationShow = () =>{
   let scrolled = window.scrollY
     if(scrolled > 100){
       aboutAnimation.classList.add('about-effect-show')
+    }if(scrolled > 550){
+      tasksAnimation.classList.add('tasks-effect-show')
+    }if(scrolled > 1500){
+      linksAnimation.classList.add('links-effect-show')
     }
   
 }
