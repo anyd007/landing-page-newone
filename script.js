@@ -52,9 +52,9 @@ const DOMCreateElements = () => {
   cvViev = document.querySelector('#cv-view');
   triangleLeft = document.querySelector('#triangle-left');
   triangleRight = document.querySelector('#triangle-right');
-  aboutAnimation = document.querySelector('.about-effect')
-  tasksAnimation = document.querySelector('.tasks-effect')
-  linksAnimation = document.querySelector('.links-effect')
+  aboutAnimation = document.querySelector('.about-effect');
+  tasksAnimation = document.querySelector('.tasks-effect');
+  linksAnimation = document.querySelector('.links-effect');
 
 };
 
@@ -87,9 +87,9 @@ const aboutAnimationShow = () =>{
   let scrolled = window.scrollY
     if(scrolled > 100){
       aboutAnimation.classList.add('about-effect-show')
-    }if(scrolled > 550){
+    }if(scrolled > 600){
       tasksAnimation.classList.add('tasks-effect-show')
-    }if(scrolled > 1500){
+    }if(scrolled > 1700){
       linksAnimation.classList.add('links-effect-show')
     }
   

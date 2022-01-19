@@ -133,13 +133,13 @@ a:hover {
     1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 .links-effect{
-  margin-top: -50px;
+  margin-top: -70px;
   z-index: -1;
   position: absolute;
   background-color: #00FFFF;
   left: -900px;
-  width: 70%;
-  height: 40%;
+  width: 80%;
+  height: 50%;
 transition: transform 2.5s;
 clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
