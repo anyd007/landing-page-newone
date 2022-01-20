@@ -161,7 +161,7 @@ const checkView = (mobileCheck) =>{
   console.log(desktopAppConteiner);
   if (mobileCheck.matches) { 
     desktopAppConteiner.style.display='none'
-    mobileMenu.style.display = display='block'
+    mobileMenu.style.display ='block'
   }else{
     desktopAppConteiner.style.display='block'
   }
