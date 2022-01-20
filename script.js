@@ -28,6 +28,7 @@ let navList;
 // mobile
 
 const main = () => {
+  mobileCheck.addListener(checkView) 
   DOMCreateElements();
   DOMCreateEvents();
 };
