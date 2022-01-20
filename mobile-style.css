@@ -1,10 +1,10 @@
+#mobileSideVersion{
+    position: relative;
+}
 
 .mobileMenu{
     margin-top: 0%;
-   
-}
-
-
+   }
 .hide{
     display: none;
 }
@@ -19,13 +19,14 @@
     width: 80%;
     transition: transform 1s;
     height: auto;
-    background-color: rgba(0, 255, 255, 1,0.6);
+    background: rgba(0, 255, 255, 1);
 }
 .navUl li {
     padding: 20px;
     font-size: 40px;
 }
 .active{
+    
     top: 0%;
     width: 80%;
     transform: translateX(350px);
@@ -49,4 +50,7 @@
 .burger-menu:hover{
     box-shadow: none;
     background-color: transparent;
+}
+.h1Title{
+    text-align: center;
 }
