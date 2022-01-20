@@ -163,9 +163,10 @@ const checkView = (mobileCheck) =>{
   console.log(mobileMenu);
   if (mobileCheck.matches) { 
     desktopAppConteiner.style.display='none'
-    mobileMenu.style.display ='block'
+    mobileMenu.style.display ='inline-block'
   }else{
-    desktopAppConteiner.style.display='block'
+    mobileMenu.style.display ='none'
+    desktopAppConteiner.style.display='inline-block'
   }
 }
 let mobileCheck = window.matchMedia("(max-width: 700px)")

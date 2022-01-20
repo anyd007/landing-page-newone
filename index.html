@@ -15,6 +15,7 @@
            @media only screen and (device-width: 768px) {
     }</style> -->
       <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./mobile-style.css">
       <style> @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); </style>
     
     </head>
@@ -141,7 +142,10 @@
         <!-- mobile sction -->
         <div class="mobileMenu" style="display: none;">
             <nav>
-                <button>zamknij</button>
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                <i class="fas fa-times hide"></i>
+                </div>
                 <ul class="navUl"></ul>
                     <li id="mobileAboutMe">o mnie</li>
                     <li id="mobileMyTasks">moje ćwiczenia</li>
