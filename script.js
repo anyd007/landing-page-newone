@@ -25,7 +25,8 @@ let tasksAnimation;
 let linksAnimation;
 let navAllTags;
 let navList;
-
+// mobile
+let mobileMenu;
 const main = () => {
   DOMCreateElements();
   DOMCreateEvents();
@@ -59,6 +60,8 @@ const DOMCreateElements = () => {
   aboutAnimation = document.querySelector('.about-effect');
   tasksAnimation = document.querySelector('.tasks-effect');
   linksAnimation = document.querySelector('.links-effect');
+  mobileMenu = document.querySelector('.mobileMenu');
+  
 };
 const navEffecttRemove = () =>{
     navAllTags.forEach(el =>{
@@ -153,6 +156,18 @@ const showTask = (e) => {
     window.open('https://xenodochial-mahavira-42d0e4.netlify.app');
   }
 };
+const checkView = (mobileCheck) =>{
+  let desktopAppConteiner = document.querySelector('#desktopApp');
+  console.log(desktopAppConteiner);
+  if (mobileCheck.matches) { 
+    desktopAppConteiner.style.display='none'
+    mobileMenu.style.display = display='flex'
+  }else{
+    desktopAppConteiner.style.display='block'
+  }
+}
+let mobileCheck = window.matchMedia("(max-width: 700px)")
+checkView(mobileCheck) 
 
 
 
@@ -168,6 +183,7 @@ const DOMCreateEvents = () => {
   contactSendBtn.addEventListener('click', inputCheck);
   window.addEventListener('DOMContentLoaded', animationHeaderShow);
   window.addEventListener('scroll', aboutAnimationShow);
+  mobileCheck.addListener(checkView) 
 };
 
 

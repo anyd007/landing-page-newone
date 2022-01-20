@@ -9,14 +9,18 @@
         <meta name="author" content="Andrzej Gębala">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="http://fonts.googleapis.com/css?family=Allan&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Allan&subset=latin,latin-ext" rel="stylesheet" type="text/css">
       <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+      <!-- <style type="text/css">
+           @media only screen and (device-width: 768px) {
+    }</style> -->
       <link rel="stylesheet" href="./style.css">
       <style> @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); </style>
     
     </head>
 
     <body>
+<div id="desktopApp">
         <section>
         <header>
             <div class="header-effect">
@@ -133,7 +137,18 @@
         </section>
         <button id="scroll-up"><i class="fas fa-arrow-up fa-2x"></i></button>
         <footer></footer>
+</div>
+        <!-- mobile sction -->
+        <div class="mobileMenu" style="display: none;">
+            <nav>
+                <button>zamknij</button>
+                <ul class="navUl"></ul>
+                    <li id="mobileAboutMe">o mnie</li>
+                    <li id="mobileMyTasks">moje ćwiczenia</li>
+                    <li id="mobileLinks">moje linki</li>
+            </nav>
+        </div>
     <script src="./script.js"></script>
-    <script src="./scrollfade-0.1.js"></script>
+        <script src='./mobile-script.js'></script>
     </body>
 </html>
