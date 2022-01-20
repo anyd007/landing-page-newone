@@ -31,15 +31,16 @@
     position: absolute;
     top:0%;
     left: 5px;
-    background: none;
+    background-color: none;
     border: none;
     transition: transform 1.5s;
 }
 .burger-menu:active{
     border: none;
-    background-color: none;
+    background-color: transparent;
     box-shadow: none;
 }
 .burger-menu:hover{
     box-shadow: none;
+    background-color: transparent;
 }
