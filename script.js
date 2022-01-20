@@ -26,7 +26,7 @@ let linksAnimation;
 let navAllTags;
 let navList;
 // mobile
-let mobileMenu;
+
 const main = () => {
   DOMCreateElements();
   DOMCreateEvents();
@@ -158,7 +158,8 @@ const showTask = (e) => {
 };
 const checkView = (mobileCheck) =>{
   let desktopAppConteiner = document.querySelector('#desktopApp');
-  console.log(desktopAppConteiner);
+  mobileMenu = document.querySelector('.mobileMenu');
+  console.log(mobileMenu);
   if (mobileCheck.matches) { 
     desktopAppConteiner.style.display='none'
     mobileMenu.style.display ='block'
