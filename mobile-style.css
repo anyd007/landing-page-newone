@@ -51,6 +51,10 @@
     box-shadow: none;
     background-color: transparent;
 }
+main{
+    margin-top: 0%;
+}
 .h1Title{
+    margin-top: -35px;
     text-align: center;
 }
