@@ -1,11 +1,14 @@
 
-
+.mobileMenu{
+    margin-top: 0%;
+}
 
 
 .hide{
     display: none;
 }
-nav ul {
+.navUl {
+    list-style: none;
     position: absolute;
     left: -350px;
     width: 40%;
@@ -13,4 +16,21 @@ transition: transform 3s;
 }
 .active{
     transform: translateX(350px);
+}
+.burger-menu{
+    margin-top: 0%;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    background: none;
+    border: none;
+    transition: transform 3s;
+}
+.burger-menu:active{
+    border: none;
+    background-color: none;
+    box-shadow: none;
+}
+.burger-menu:hover{
+    box-shadow: none;
 }
