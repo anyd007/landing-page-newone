@@ -11,6 +11,10 @@ const hideOpenMenu = e =>{
         mobileNavUl.classList.add('active');
         btnShowMenu.style.display = 'none'
         btncloseMenu.style.display = 'flex'
+    }else if(e.target.matches('.hide')){
+        mobileNavUl.classList.remove('active');
+        btnShowMenu.style.display = 'flex';
+        btncloseMenu.style.display = 'none';
     }
 }
 
