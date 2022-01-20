@@ -12,23 +12,25 @@
     list-style: none;
     position: absolute;
     left: -350px;
-    width: 40%;
+    width: 60%;
     transition: transform 1s;
     height: 100vh;
 }
 .navUl li {
     padding: 20px;
-    font-size: 30px;
+    font-size: 40px;
+    width: 70%;
 }
 .active{
-    transform: translateX(360px);
+    width: 100%;
+    transform: translateX(355px);
 }
 .burger-menu{
     z-index: 4;
     margin-top: 0%;
     position: absolute;
     top:0%;
-    left: 1%;
+    left: 5px;
     background: none;
     border: none;
     transition: transform 1.5s;
