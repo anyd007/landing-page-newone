@@ -7,7 +7,7 @@ const mobileTasks = document.querySelector('.mobileMyTasks');
 const mobileLinks = document.querySelector('.mobileLinks');
 const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
-const dots = '...'
+const dots = ['...']
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -18,7 +18,7 @@ let moreMobileParaAboutMe = document.createElement('p')
 const btnReadMore = document.createElement('button')
 mobileAboutMeSection.append(btnReadMore)
 btnReadMore.setAttribute('class', 'btnMore')
-btnReadMore.innerText = 'czytaj więcej'  
+btnReadMore.textContent = 'czytaj więcej'  
 
 
 const hideOpenMenu = e =>{
@@ -32,15 +32,23 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
-
+const ShowHideTxtBtn = () =>{
+    if(btnReadMore.textContent = 'czytaj więcej'){
+        btnReadMore.textContent = 'czytaj mniej'
+    }else{
+        btnReadMore.textContent = 'czytaj więcej'
+    }
+}
 const showMoreTxt = (e) =>{
+    console.log(btnReadMore.textContent);
+    moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
-        moreMobileParaAboutMe.textContent = `Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
-        dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
-        dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
-        związane z programowaniem i obsługą komputera.`;
-        btnReadMore.innerText = 'czytaj mniej'
-        dots.textContent = ''
+        moreMobileParaAboutMe.textContent =`Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
+dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
+dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
+związane z programowaniem i obsługą komputera.`
+        moreMobileParaAboutMe.classList.toggle('showTxt')
+        ShowHideTxtBtn()
     }
 }
 mobileParaAboutMe.textContent = `Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, 
