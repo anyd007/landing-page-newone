@@ -56,7 +56,7 @@ main{
     text-align: center;
 }
 .mainGradient{
-    margin-top: -15px;
+    margin-top: -10px;
     z-index: -1;
     position: absolute;
     left: 0%;

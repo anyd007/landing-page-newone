@@ -32,13 +32,7 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
-const ShowHideTxtBtn = () =>{
-    if(btnReadMore.textContent = 'czytaj więcej'){
-        btnReadMore.textContent = 'czytaj mniej'
-    }else{
-        btnReadMore.textContent = 'czytaj więcej'
-    }
-}
+
 const showMoreTxt = (e) =>{
     console.log(btnReadMore.textContent);
     moreMobileParaAboutMe.classList.add('hideTxt')
@@ -48,7 +42,7 @@ dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole,
 dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
 związane z programowaniem i obsługą komputera.`
         moreMobileParaAboutMe.classList.toggle('showTxt')
-        ShowHideTxtBtn()
+    e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'czytaj więcej'
     }
 }
 mobileParaAboutMe.textContent = `Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, 
