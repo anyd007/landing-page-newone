@@ -7,8 +7,25 @@ const mobileTasks = document.querySelector('.mobileMyTasks');
 const mobileLinks = document.querySelector('.mobileLinks');
 const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
-const dots = ['...']
+const dots = '...'
+const mobileLanguanges = document.querySelector('.mobileLanguanges');
 
+// skills creator
+let h4skills = document.createElement('h4');
+mobileLanguanges.append(h4skills)
+class AddSkills{
+    constructor(skillName, favicon){
+        this.skillName = skillName,
+        this.favicon = favicon
+    }
+    addSkills(){
+        h4skills.textContent = `${this.skillName} i ${this.favicon}`
+    }
+}
+// let htmlSkill = '';
+// htmlSkill.innerHtml = `<i class="fab fa-html5 fa-5x" ></i>`
+// const newSkill = new AddSkills('html', htmlSkill)
+// newSkill.addSkills()
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
         moreMobileParaAboutMe.classList.add('mobileParaAboutMe')
@@ -21,7 +38,7 @@ btnReadMore.setAttribute('class', 'btnMore')
 btnReadMore.classList.add('button-style')
 btnReadMore.textContent = 'czytaj więcej'  
 
-
+// burger menu
 const hideOpenMenu = e =>{
     if(e.target.matches('.show')){
         mobileNavUl.classList.add('active')
@@ -33,9 +50,8 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
-
+// read more
 const showMoreTxt = (e) =>{
-    console.log(btnReadMore.textContent);
     moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
         moreMobileParaAboutMe.textContent =`Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
@@ -44,6 +60,7 @@ dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym
 związane z programowaniem i obsługą komputera.`
         moreMobileParaAboutMe.classList.toggle('showTxt')
     e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'czytaj więcej'
+
     }
 }
 mobileParaAboutMe.textContent = `Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, 

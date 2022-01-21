@@ -61,7 +61,7 @@ const DOMCreateElements = () => {
   aboutAnimation = document.querySelector('.about-effect');
   tasksAnimation = document.querySelector('.tasks-effect');
   linksAnimation = document.querySelector('.links-effect');
-  mobileMenu = document.querySelector('.mobileMenu');
+  mobileMenu = document.querySelector('#mobileSideVersion');
   
 };
 const navEffecttRemove = () =>{
@@ -159,8 +159,7 @@ const showTask = (e) => {
 };
 const checkView = (mobileCheck) =>{
   let desktopAppConteiner = document.querySelector('#desktopApp');
-  mobileMenu = document.querySelector('.mobileMenu');
-  console.log(mobileMenu);
+  mobileMenu = document.querySelector('#mobileSideVersion');
   if (mobileCheck.matches) { 
     desktopAppConteiner.style.display='none'
     mobileMenu.style.display ='inline-block'
