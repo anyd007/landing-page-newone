@@ -75,3 +75,12 @@ main{
 .showTxt{
     display: flex;
 }
+.button-style{
+    position: absolute;
+    left: 1%;
+    width: 20%;
+    font-size: 15px;
+}
+.button-style:active{
+    box-shadow: none;
+}

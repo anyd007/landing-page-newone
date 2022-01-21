@@ -18,6 +18,7 @@ let moreMobileParaAboutMe = document.createElement('p')
 const btnReadMore = document.createElement('button')
 mobileAboutMeSection.append(btnReadMore)
 btnReadMore.setAttribute('class', 'btnMore')
+btnReadMore.classList.add('button-style')
 btnReadMore.textContent = 'czytaj więcej'  
 
 
