@@ -55,6 +55,21 @@ main{
     margin-top: -30px;
     text-align: center;
 }
+.mobileSkillsTitle{
+    text-align: center;
+    font-size: 30px;
+}
+.mobile-my-skills{
+    text-align: center;
+    width: 100%;
+}
+.mobileSkill{
+    width: 18%;
+}
+.mobileSkill p {
+    font-size: 35px;
+    margin: 0%;
+}
 .mainGradient{
     margin-top: -5px;
     z-index: -1;
@@ -75,9 +90,6 @@ main{
     margin-top: 20px;
     margin: 4px;
     padding: 5px;
-    /* position: absolute;
-    left: 1%; */
-    /* bottom: 1%; */
     width: 30%;
     font-size: 20px;
 }

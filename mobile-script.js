@@ -49,6 +49,10 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
+// my skills
+mobileSkillsTitle = document.createElement('h4')
+mobileSkillsTitle.textContent = ''
+
 
 // read more
 const showMoreTxt = (e) =>{
