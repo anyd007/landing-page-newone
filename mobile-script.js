@@ -12,6 +12,7 @@ const dots = '...'
 const mobileLanguanges = document.querySelector('.mobileLanguanges');
 const cytat = document.querySelector('.cytat')
 const signature = document.querySelector('.signature')
+const closeFav = document.querySelector('.closeFav')
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -56,10 +57,6 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
-// my skills
-// mobileSkillsTitle = document.createElement('h4')
-// mobileSkillsTitle.textContent = ''
-
 
 // read more
 const showMoreTxt = (e) =>{
@@ -87,16 +84,24 @@ const showMoreTxt = (e) =>{
         e.target.textContent == 'moje skile </>' ? e.target.textContent = 'ukryj skile </>' : e.target.textContent = 'moje skile </>'
     }
 }
-
 `${moreMobileParaAboutMe.textContent}`
+const closeIcon = (e)=>{
+    if(e.target.matches('.closeFav')){
+        mobileLanguanges.classList.toggle('showTxt')
+        cytat.classList.toggle('hideTxt')
+        signature.classList.toggle('hideTxt')
+        btnShowCV.classList.toggle('hideTxt')
+        btnGetCv.classList.toggle('hideTxt')
+        btnMyTaks.classList.toggle('hideTxt')
+        console.log('hi');
+    }
+}
 
 
 
 
 
 
-
-
-
+mobileLanguanges.addEventListener('click', closeIcon)
 mobileAboutMeSection.addEventListener('click', showMoreTxt)
 mobileNavBtnContener.addEventListener('click', hideOpenMenu)
