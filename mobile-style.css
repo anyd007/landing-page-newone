@@ -81,8 +81,9 @@ main{
   clip-path: polygon(45% 0, 100% 50%, 43% 100%, 0 100%, 51% 49%, 0 0);
 }
 .mobileParaAboutMe{
+    margin-top: 8%;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0%;
 }
 
