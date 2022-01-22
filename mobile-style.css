@@ -94,9 +94,10 @@ main{
 }
 
 .button-style{
+    border-radius: 10px;
     margin-top: 20px;
     margin: 4px;
-    padding: 5px;
+    padding: 4px;
     width: 30%;
     font-size: 20px;
     box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
