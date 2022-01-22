@@ -52,7 +52,6 @@ main{
     margin-top: 0%;
 }
 .h1Title{
-    margin-bottom: 5%;
     margin-top: -30px;
     text-align: center;
 }
@@ -63,7 +62,7 @@ main{
 .mobile-my-skills{
     text-align: center;
     width: 100%;
-    margin-top: 0%;
+    margin-top: -4%;
 }
 .mobileSkill{
     width: 25%;

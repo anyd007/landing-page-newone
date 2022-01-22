@@ -93,7 +93,7 @@ const closeIcon = (e)=>{
         btnShowCV.classList.toggle('hideTxt')
         btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
-        console.log('hi');
+        btnMySkills.textContent == 'moje skile </>' ? btnMySkills.textContent = 'ukryj skile </>' : btnMySkills.textContent = 'moje skile </>'
     }
 }
 
