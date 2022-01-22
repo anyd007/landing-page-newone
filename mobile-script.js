@@ -64,10 +64,7 @@ const hideOpenMenu = e =>{
 // read more
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
-    // cytat.classList.toggle('hideTxt')
-    // signature.classList.toggle('hideTxt')
-    // mobileLanguanges.removeAttribute('style')
-    // mobileLanguanges.classList.add('showTxt')
+    
     if(e.target.matches('.btnMore')){
         moreMobileParaAboutMe.textContent =`Cześć, nazywam się Andrzej i jestem początkującym front-end developerem bez 
         doświadczenia komercyjnego. 
@@ -84,6 +81,9 @@ const showMoreTxt = (e) =>{
         mobileLanguanges.classList.toggle('showTxt')
         cytat.classList.toggle('hideTxt')
         signature.classList.toggle('hideTxt')
+        btnShowCV.classList.toggle('hideTxt')
+        btnGetCv.classList.toggle('hideTxt')
+        btnMyTaks.classList.toggle('hideTxt')
         e.target.textContent == 'moje skile </>' ? e.target.textContent = 'ukryj skile' : e.target.textContent = 'moje skile </>'
     }
 }
