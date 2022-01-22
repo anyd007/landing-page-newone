@@ -84,7 +84,7 @@ const showMoreTxt = (e) =>{
         btnShowCV.classList.toggle('hideTxt')
         btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
-        e.target.textContent == 'moje skile </>' ? e.target.textContent = 'ukryj skile' : e.target.textContent = 'moje skile </>'
+        e.target.textContent == 'moje skile </>' ? e.target.textContent = 'ukryj skile </>' : e.target.textContent = 'moje skile </>'
     }
 }
 
