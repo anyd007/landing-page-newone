@@ -61,24 +61,23 @@ const hideOpenMenu = e =>{
 }
 // read more
 mobileParaAboutMe.setAttribute('style','white-space:pre')
-let signature = ''
-signature.textContent = 'Martin Golding'
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
-        moreMobileParaAboutMe.textContent =`Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli 
-        mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.
+        moreMobileParaAboutMe.textContent =`Cześć, nazywam się Andrzej i jestem początkującym frontend developerem bez 
+        doświadczenia komercyjnego. 
         Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
         dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
      dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
-        związane z programowaniem i obsługą komputera.`
+        związane z programowaniem i obsługą komputera. Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli 
+        mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.`
         moreMobileParaAboutMe.classList.toggle('showTxt')
     e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'czytaj więcej'
 
     }
 }
 mobileParaAboutMe.textContent = `"pisz kod tak, jakby gość,który go \r\ndostanie,był agresywnym psychopatą,
-który wie, gdzie mieszkasz."\r\n${signature}${moreMobileParaAboutMe.textContent}`
+który wie, gdzie mieszkasz."\r\nMartin Golding${moreMobileParaAboutMe.textContent}`
 
 
 
