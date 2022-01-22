@@ -36,7 +36,7 @@ const btnReadMore = document.createElement('button')
 mobileAboutMeSection.append(btnReadMore)
 btnReadMore.setAttribute('class', 'btnMore')
 btnReadMore.classList.add('button-style')
-btnReadMore.textContent = 'czytaj więcej'  
+btnReadMore.textContent = 'o mnie'  
 const btnShowCV = document.createElement('button')
 mobileAboutMeSection.append(btnShowCV)
 btnShowCV.setAttribute('class','btnShowCV')
