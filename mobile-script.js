@@ -49,12 +49,8 @@ const hideOpenMenu = e =>{
         btncloseMenu.style.display = 'none';
     }
 }
+
 // read more
-mobileParaAboutMe.setAttribute('style','white-space:pre')
-const signature = document.createElement('p')
-signature.textContent = 'Martin Golding'
-signature.style.color = 'red'
-console.log(signature);
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
@@ -71,8 +67,8 @@ const showMoreTxt = (e) =>{
 
     }
 }
-mobileParaAboutMe.textContent = `"pisz kod tak, jakby gość,który go \r\ndostanie,był agresywnym psychopatą,
-który wie, gdzie mieszkasz."\r\n ${signature.textContent} \r\n${moreMobileParaAboutMe.textContent}`
+
+`${moreMobileParaAboutMe.textContent}`
 
 
 
