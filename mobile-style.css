@@ -67,7 +67,7 @@ main{
     width: 18%;
 }
 .mobileSkill p {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0%;
 }
 .mainGradient{
@@ -83,7 +83,7 @@ main{
 .mobileParaAboutMe{
     margin-top: 8%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 0%;
 }
 
