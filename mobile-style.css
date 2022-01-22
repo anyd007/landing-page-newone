@@ -52,7 +52,7 @@ main{
     margin-top: 0%;
 }
 .h1Title{
-    margin-top: -50px;
+    margin-top: -30px;
     text-align: center;
 }
 .mainGradient{
@@ -66,8 +66,23 @@ main{
   clip-path: polygon(45% 0, 100% 50%, 43% 100%, 0 100%, 51% 49%, 0 0);
 }
 .mobileParaAboutMe{
+    text-align: center;
     font-size: 30px;
     margin-bottom: 0%;
+}
+
+.button-style{
+    margin-top: 20px;
+    margin: 4px;
+    padding: 5px;
+    /* position: absolute;
+    left: 1%; */
+    /* bottom: 1%; */
+    width: 30%;
+    font-size: 20px;
+}
+.button-style:active{
+    box-shadow: none;
 }
 .hideTxt{
     display: none;
@@ -75,13 +90,7 @@ main{
 .showTxt{
     display: flex;
 }
-.button-style{
+.floatRight{
     position: absolute;
-    left: 1%;
-    /* bottom: 1%; */
-    width: 20%;
-    font-size: 15px;
-}
-.button-style:active{
-    box-shadow: none;
+    right: 0%;
 }

@@ -37,7 +37,16 @@ mobileAboutMeSection.append(btnReadMore)
 btnReadMore.setAttribute('class', 'btnMore')
 btnReadMore.classList.add('button-style')
 btnReadMore.textContent = 'czytaj więcej'  
-
+const btnShowCV = document.createElement('button')
+mobileAboutMeSection.append(btnShowCV)
+btnShowCV.setAttribute('class','btnShowCV')
+btnShowCV.classList.add('button-style')
+btnShowCV.textContent = 'zobacz moje CV'
+const btnGetCv = document.createElement('button')
+mobileAboutMeSection.append(btnGetCv)
+btnGetCv.setAttribute('class','btnGetCV')
+btnGetCv.classList.add('button-style')
+btnGetCv.textContent = 'pobierz moje cv'
 // burger menu
 const hideOpenMenu = e =>{
     if(e.target.matches('.show')){
@@ -51,20 +60,25 @@ const hideOpenMenu = e =>{
     }
 }
 // read more
+mobileParaAboutMe.setAttribute('style','white-space:pre')
+let signature = ''
+signature.textContent = 'Martin Golding'
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
-        moreMobileParaAboutMe.textContent =`Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
-dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
-dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
-związane z programowaniem i obsługą komputera.`
+        moreMobileParaAboutMe.textContent =`Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli 
+        mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.
+        Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
+        dążenia do celu, nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
+     dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
+        związane z programowaniem i obsługą komputera.`
         moreMobileParaAboutMe.classList.toggle('showTxt')
     e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'czytaj więcej'
 
     }
 }
-mobileParaAboutMe.textContent = `Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć wyznaczony przeze mnie cel, 
-czyli pracę na stanowisku Front-End Developera.${dots}${moreMobileParaAboutMe.textContent}`
+mobileParaAboutMe.textContent = `"pisz kod tak, jakby gość,który go \r\ndostanie,był agresywnym psychopatą,
+który wie, gdzie mieszkasz."\r\n${signature}${moreMobileParaAboutMe.textContent}`
 
 
 
