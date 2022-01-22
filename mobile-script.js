@@ -73,7 +73,7 @@ const showMoreTxt = (e) =>{
         mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.`
     
         moreMobileParaAboutMe.classList.toggle('showTxt')
-    e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'czytaj więcej'
+    e.target.textContent == 'czytaj więcej' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'o mnie'
 
     }
 }
