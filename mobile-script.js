@@ -5,27 +5,12 @@ const mobileNavUl = document.querySelector('.navUl');
 const mobileAboutMe = document.querySelector('.mobileAboutMe');
 const mobileTasks = document.querySelector('.mobileMyTasks');
 const mobileLinks = document.querySelector('.mobileLinks');
+const titleContener = document.querySelector('.titleContener')
 const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
 const dots = '...'
 const mobileLanguanges = document.querySelector('.mobileLanguanges');
 
-// skills creator
-let h4skills = document.createElement('h4');
-mobileLanguanges.append(h4skills)
-class AddSkills{
-    constructor(skillName, favicon){
-        this.skillName = skillName,
-        this.favicon = favicon
-    }
-    addSkills(){
-        h4skills.textContent = `${this.skillName} i ${this.favicon}`
-    }
-}
-// let htmlSkill = '';
-// htmlSkill.innerHtml = `<i class="fab fa-html5 fa-5x" ></i>`
-// const newSkill = new AddSkills('html', htmlSkill)
-// newSkill.addSkills()
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
         moreMobileParaAboutMe.classList.add('mobileParaAboutMe')
@@ -38,15 +23,20 @@ btnReadMore.setAttribute('class', 'btnMore')
 btnReadMore.classList.add('button-style')
 btnReadMore.textContent = 'o mnie'  
 const btnShowCV = document.createElement('button')
-mobileAboutMeSection.append(btnShowCV)
+titleContener.append(btnShowCV)
 btnShowCV.setAttribute('class','btnShowCV')
 btnShowCV.classList.add('button-style')
 btnShowCV.textContent = 'zobacz moje CV'
 const btnGetCv = document.createElement('button')
-mobileAboutMeSection.append(btnGetCv)
+titleContener.append(btnGetCv)
 btnGetCv.setAttribute('class','btnGetCV')
 btnGetCv.classList.add('button-style')
 btnGetCv.textContent = 'pobierz moje cv'
+const btnMyTaks = document.createElement('button')
+titleContener.append(btnMyTaks)
+btnMyTaks.setAttribute('class','btnMyTasks')
+btnMyTaks.classList.add('button-style')
+btnMyTaks.textContent = 'moje ćwiczenia'
 // burger menu
 const hideOpenMenu = e =>{
     if(e.target.matches('.show')){
@@ -61,6 +51,10 @@ const hideOpenMenu = e =>{
 }
 // read more
 mobileParaAboutMe.setAttribute('style','white-space:pre')
+const signature = document.createElement('p')
+signature.textContent = 'Martin Golding'
+signature.style.color = 'red'
+console.log(signature);
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
     if(e.target.matches('.btnMore')){
@@ -73,12 +67,12 @@ const showMoreTxt = (e) =>{
         mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.`
     
         moreMobileParaAboutMe.classList.toggle('showTxt')
-    e.target.textContent == 'o mnie' ? e.target.textContent = 'czytaj mniej' : e.target.textContent = 'o mnie'
+    e.target.textContent == 'o mnie' ? e.target.textContent = 'ukryj' : e.target.textContent = 'o mnie'
 
     }
 }
 mobileParaAboutMe.textContent = `"pisz kod tak, jakby gość,który go \r\ndostanie,był agresywnym psychopatą,
-który wie, gdzie mieszkasz."\r\nMartin Golding \r\n${moreMobileParaAboutMe.textContent}`
+który wie, gdzie mieszkasz."\r\n ${signature.textContent} \r\n${moreMobileParaAboutMe.textContent}`
 
 
 

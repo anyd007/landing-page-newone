@@ -90,7 +90,7 @@ main{
 .showTxt{
     display: flex;
 }
-.floatRight{
-    position: absolute;
-    right: 0%;
+.signature{
+   color: red;
+   font-size: 15px;
 }
