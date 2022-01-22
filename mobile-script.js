@@ -10,6 +10,8 @@ const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
 const dots = '...'
 const mobileLanguanges = document.querySelector('.mobileLanguanges');
+const cytat = document.querySelector('.cytat')
+const signature = document.querySelector('.signature')
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -37,6 +39,11 @@ titleContener.append(btnMyTaks)
 btnMyTaks.setAttribute('class','btnMyTasks')
 btnMyTaks.classList.add('button-style')
 btnMyTaks.textContent = 'moje ćwiczenia'
+const btnMySkills = document.createElement('button')
+mobileAboutMeSection.append(btnMySkills)
+btnMySkills.setAttribute('class','btnMySkills')
+btnMySkills.classList.add('button-style')
+btnMySkills.textContent = 'moje skile </>'
 // burger menu
 const hideOpenMenu = e =>{
     if(e.target.matches('.show')){
@@ -50,13 +57,17 @@ const hideOpenMenu = e =>{
     }
 }
 // my skills
-mobileSkillsTitle = document.createElement('h4')
-mobileSkillsTitle.textContent = ''
+// mobileSkillsTitle = document.createElement('h4')
+// mobileSkillsTitle.textContent = ''
 
 
 // read more
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
+    // cytat.classList.toggle('hideTxt')
+    // signature.classList.toggle('hideTxt')
+    // mobileLanguanges.removeAttribute('style')
+    // mobileLanguanges.classList.add('showTxt')
     if(e.target.matches('.btnMore')){
         moreMobileParaAboutMe.textContent =`Cześć, nazywam się Andrzej i jestem początkującym front-end developerem bez 
         doświadczenia komercyjnego. 
@@ -68,7 +79,12 @@ const showMoreTxt = (e) =>{
     
         moreMobileParaAboutMe.classList.toggle('showTxt')
     e.target.textContent == 'o mnie' ? e.target.textContent = 'ukryj' : e.target.textContent = 'o mnie'
-
+    }
+    if(e.target.matches('.btnMySkills')){
+        mobileLanguanges.classList.toggle('showTxt')
+        cytat.classList.toggle('hideTxt')
+        signature.classList.toggle('hideTxt')
+        e.target.textContent == 'moje skile </>' ? e.target.textContent = 'ukryj skile' : e.target.textContent = 'moje skile </>'
     }
 }
 
