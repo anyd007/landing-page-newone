@@ -145,6 +145,18 @@ const showMyTasks = e =>{
 const openTasks = e =>{
     if(e.target.matches('.cars')){
         window.open("https://vigilant-kilby-67c922.netlify.app/")
+    }else if(e.target.matches('.form')){
+        window.open("https://practical-kare-7e5ace.netlify.app/")
+    }else if(e.target.matches('.to-do')){
+        window.open("https://nervous-visvesvaraya-455618.netlify.app/")
+    }else if(e.target.matches('.lottery-game')){
+        window.open("https://dreamy-hugle-b6f4f9.netlify.app/")
+    }else if(e.target.matches('.weather-api')){
+        window.open("https://gracious-albattani-650a6b.netlify.app/")
+    }else if(e.target.matches('.react-to-do')){
+        window.open("https://sharp-jackson-d396f4.netlify.app/")
+    }else if(e.target.matches('.react-form')){
+        window.open('https://xenodochial-mahavira-42d0e4.netlify.app')
     }
 }
 

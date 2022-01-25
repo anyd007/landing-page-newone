@@ -238,20 +238,35 @@ form button,
     transform: translate(0px);
   }
 }
-.tasks-effect{
+/* .tasks-effect{
   margin-top: -20px;
   z-index: -1;
   position: absolute;
-  left: 2200px;
-  width: 90%;
+  width: 99%;
   height: 80%;
   background-color: #00FFFF;
  clip-path: inset(0 0 70% 0);
- transition: transform 2.5s;
-}
+ 
+} */
 .tasks-effect-show{
-  transform: translateX(-1630px);
+  margin-top: -20px;
+  z-index: -1;
+  position: absolute;
+  width: 99%;
+  height: 80%;
+  background-color: #00FFFF;
+ clip-path: inset(0 0 70% 0);
+  animation: fadeIn ease 2.5s;
 }
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 table{
   position: relative;
   /* border-spacing: 15px; */
@@ -270,7 +285,7 @@ td {
   border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
-  background-color: lightgrey;
+  background-color: yellow;
   transition: box-shadow 1s;
 }
 td:hover {

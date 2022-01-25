@@ -106,7 +106,7 @@ const aboutAnimationShow = () =>{
   let scrolled = window.scrollY
     if(scrolled > 100){
       aboutAnimation.classList.add('about-effect-show')
-    }if(scrolled > 600){
+    }if(scrolled > 700){
       tasksAnimation.classList.add('tasks-effect-show')
     }if(scrolled > 1700){
       linksAnimation.classList.add('links-effect-show')
