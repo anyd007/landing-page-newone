@@ -109,9 +109,10 @@ const getCV  = (e) =>{
 }
 // pokaż CV
 let divImg = document.createElement('div')
-    divImg.style.height = 50 + 'vh'
+    divImg.style.height = 60 + 'vh'
     let openModalCV = document.createElement('img')
     openModalCV.setAttribute('src', './obrazy/dokumenty/Andrzej_Gebala_CV_IT_photo.jpg')
+    openModalCV.classList.add('img-style')
     openModalCV.style.margin = '0 auto'
     divImg.append(openModalCV)
     divImg.classList.add('hideTxt')
@@ -122,7 +123,6 @@ const showCV = e =>{
         cytat.classList.toggle('hideTxt')
         signature.classList.toggle('hideTxt')
         btnMySkills.classList.toggle('hideTxt')
-        // btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnReadMore.classList.toggle('hideTxt')
         btnShowCV.textContent == 'zobacz moje CV' ? btnShowCV.textContent = 'zamknij moje CV' : btnShowCV.textContent = 'zobacz moje CV'
