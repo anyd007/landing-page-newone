@@ -112,6 +112,7 @@ main{
     border-style: none;
     border-radius: 10px;
     margin: 5px;
+    margin-top: 7%;
     padding: 4px;
     width: 36%;
     font-size: 20px;
@@ -136,6 +137,9 @@ main{
 #mobileTaskTable{
     width: 100%;
 }
+.btnMyTasks{
+    margin-top: -4%;
+}
 .mobile-tr{
     height: 17vh;
 }
@@ -153,4 +157,8 @@ main{
     width: 90%;
     height: 12vh;
     margin: 4%;
+}
+.mobile-description{
+    margin: 0%;
+    font-size: 15px;
 }

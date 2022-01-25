@@ -14,6 +14,7 @@ const cytat = document.querySelector('.cytat')
 const signature = document.querySelector('.signature')
 const closeFav = document.querySelector('.closeFavSkills')
 const mobileMyTasksSection = document.querySelector('.mobileMyTasksSection')
+const mobileTaskTable = document.querySelector('#mobileTaskTable')
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -141,7 +142,11 @@ const showMyTasks = e =>{
         btnMyTaks.textContent == 'moje ćwiczenia </>' ? btnMyTaks.textContent = 'zamknij ćwiczenia </>' : btnMyTaks.textContent = 'moje ćwiczenia </>'
     }
 }
-
+const openTasks = e =>{
+    if(e.target.matches('.cars')){
+        window.open("https://vigilant-kilby-67c922.netlify.app/")
+    }
+}
 
 
 
@@ -152,3 +157,4 @@ titleContener.addEventListener('click', getCV)
 titleContener.addEventListener('click', showCV)
 mobileNavBtnContener.addEventListener('click', hideOpenMenu)
 mobileAboutMeSection.addEventListener('click', showMyTasks)
+mobileTaskTable.addEventListener('click', openTasks)
