@@ -21,7 +21,7 @@ let moreMobileParaAboutMe = document.createElement('p')
         mobileAboutMeSection.append(moreMobileParaAboutMe)
 // button creator
 const btnReadMore = document.createElement('button')
-mobileAboutMeSection.append(btnReadMore)
+titleContener.append(btnReadMore)
 btnReadMore.setAttribute('class', 'btnMore')
 btnReadMore.classList.add('button-style')
 btnReadMore.textContent = 'o mnie'  
@@ -36,7 +36,7 @@ btnGetCv.setAttribute('class','btnGetCV')
 btnGetCv.classList.add('button-style')
 btnGetCv.textContent = 'pobierz moje cv'
 const btnMyTaks = document.createElement('button')
-titleContener.append(btnMyTaks)
+mobileAboutMeSection.append(btnMyTaks)
 btnMyTaks.setAttribute('class','btnMyTasks')
 btnMyTaks.classList.add('button-style')
 btnMyTaks.textContent = 'moje ćwiczenia'
@@ -96,6 +96,18 @@ const closeIcon = (e)=>{
         btnMySkills.textContent == 'moje skile </>' ? btnMySkills.textContent = 'ukryj skile </>' : btnMySkills.textContent = 'moje skile </>'
     }
 }
+// pobierz CV
+const getCV  = (e) =>{
+    if(e.target.matches('.btnGetCV')){
+        let download = (getUrl, fileName) =>{
+       let a = document.createElement('a');
+        a.href = getUrl;
+        a.setAttribute('downlad', fileName)
+        a.click()
+        }
+        download('./obrazy/dokumenty/Andrzej_Gębala_CV_IT.pdf', 'Andrzej_Gębala_CV')
+    }
+}
 
 
 
@@ -103,5 +115,6 @@ const closeIcon = (e)=>{
 
 
 mobileLanguanges.addEventListener('click', closeIcon)
-mobileAboutMeSection.addEventListener('click', showMoreTxt)
+titleContener.addEventListener('click', showMoreTxt)
+titleContener.addEventListener('click', getCV)
 mobileNavBtnContener.addEventListener('click', hideOpenMenu)
