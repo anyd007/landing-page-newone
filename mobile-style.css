@@ -51,6 +51,9 @@
 main{
     margin-top: 0%;
 }
+.titleContener{
+    text-align: center;
+}
 .h1Title{
     margin-top: -30px;
     text-align: center;
@@ -74,6 +77,10 @@ main{
 .closeFavSkills{
     z-index: 10;
     margin-left: 80%;
+}
+.closeFav{
+    position: absolute;
+    z-index: 10;
 }
 .mainGradient{
     margin-top: -5px;
