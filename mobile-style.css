@@ -113,7 +113,7 @@ main{
     border-radius: 10px;
     margin: 5px;
     padding: 4px;
-    width: 30%;
+    width: 36%;
     font-size: 20px;
     box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
@@ -132,4 +132,25 @@ main{
     font-size: 20px;
    font: italic;
    text-align: right;
+}
+#mobileTaskTable{
+    width: 100%;
+}
+.mobile-tr{
+    height: 17vh;
+}
+.mobile-td{
+    background-color: yellow;
+    filter: grayscale(0%);
+    animation: none;
+    text-align: center;
+    width: 50%;
+}
+.mobile-td:hover{
+    animation: none;
+}
+.mobile-img-table{
+    width: 90%;
+    height: 12vh;
+    margin: 4%;
 }

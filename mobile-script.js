@@ -13,6 +13,7 @@ const mobileLanguanges = document.querySelector('.mobileLanguanges');
 const cytat = document.querySelector('.cytat')
 const signature = document.querySelector('.signature')
 const closeFav = document.querySelector('.closeFavSkills')
+const mobileMyTasksSection = document.querySelector('.mobileMyTasksSection')
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -39,7 +40,7 @@ const btnMyTaks = document.createElement('button')
 mobileAboutMeSection.append(btnMyTaks)
 btnMyTaks.setAttribute('class','btnMyTasks')
 btnMyTaks.classList.add('button-style')
-btnMyTaks.textContent = 'moje ćwiczenia'
+btnMyTaks.textContent = 'moje ćwiczenia </>'
 const btnMySkills = document.createElement('button')
 mobileAboutMeSection.append(btnMySkills)
 btnMySkills.setAttribute('class','btnMySkills')
@@ -128,7 +129,18 @@ const showCV = e =>{
         btnShowCV.textContent == 'zobacz moje CV' ? btnShowCV.textContent = 'zamknij moje CV' : btnShowCV.textContent = 'zobacz moje CV'
     }
 }
-
+const showMyTasks = e =>{
+    if(e.target.matches('.btnMyTasks')){
+        mobileMyTasksSection.classList.toggle('showTxt')
+        cytat.classList.toggle('hideTxt')
+        signature.classList.toggle('hideTxt')
+        btnMySkills.classList.toggle('hideTxt')
+        btnShowCV.classList.toggle('hideTxt')
+        btnGetCv.classList.toggle('hideTxt')
+        btnReadMore.classList.toggle('hideTxt')
+        btnMyTaks.textContent == 'moje ćwiczenia </>' ? btnMyTaks.textContent = 'zamknij ćwiczenia </>' : btnMyTaks.textContent = 'moje ćwiczenia </>'
+    }
+}
 
 
 
@@ -139,3 +151,4 @@ titleContener.addEventListener('click', showMoreTxt)
 titleContener.addEventListener('click', getCV)
 titleContener.addEventListener('click', showCV)
 mobileNavBtnContener.addEventListener('click', hideOpenMenu)
+mobileAboutMeSection.addEventListener('click', showMyTasks)
