@@ -6,7 +6,7 @@
     display: none;
 }
 .navUl {
-
+    padding-top: 10%;
      border-radius: 10px;
     border: 1px solid black;
     top: 0%;
@@ -19,8 +19,7 @@
     background: rgba(0, 255, 255, 1);
 }
 .navUl li {
-    padding: 20px;
-    font-size: 40px;
+    font-size: 35px;
 }
 .active{
     
@@ -127,7 +126,16 @@ main{
 }
 .showTxt{
     display: inline-block;
+    animation: fadeIn ease 1.5s;
 }
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 .signature{
     margin-top: 0%;
     font-size: 20px;
