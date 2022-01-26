@@ -15,6 +15,7 @@ const signature = document.querySelector('.signature')
 const closeFav = document.querySelector('.closeFavSkills')
 const mobileMyTasksSection = document.querySelector('.mobileMyTasksSection')
 const mobileTaskTable = document.querySelector('#mobileTaskTable')
+const mobieMyLinksSection = document.querySelector('.mobieMyLinksSection')
 
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
@@ -37,6 +38,11 @@ titleContener.append(btnGetCv)
 btnGetCv.setAttribute('class','btnGetCV')
 btnGetCv.classList.add('button-style')
 btnGetCv.textContent = 'pobierz moje cv'
+const btnMyLinkns = document.createElement('button')
+titleContener.append(btnMyLinkns)
+btnMyLinkns.setAttribute('class','btnMyLinks')
+btnMyLinkns.classList.add('button-style')
+btnMyLinkns.textContent = 'kontakt/linki'
 const btnMyTaks = document.createElement('button')
 mobileAboutMeSection.append(btnMyTaks)
 btnMyTaks.setAttribute('class','btnMyTasks')
@@ -159,6 +165,21 @@ const openTasks = e =>{
         window.open('https://xenodochial-mahavira-42d0e4.netlify.app')
     }
 }
+const showMyLinks = e =>{
+    if(e.target.matches('.btnMyLinks')){
+        mobieMyLinksSection.classList.toggle('showTxt')
+        cytat.classList.toggle('hideTxt')
+        signature.classList.toggle('hideTxt')
+        btnMySkills.classList.toggle('hideTxt')
+        btnShowCV.classList.toggle('hideTxt')
+        btnGetCv.classList.toggle('hideTxt')
+        btnReadMore.classList.toggle('hideTxt')
+        btnMyTaks.classList.toggle('hideTxt')
+        btnMyLinkns.textContent == 'kontakt/linki' ? btnMyLinkns.textContent = 'zamknij' : btnMyLinkns.textContent = 'kontakt/linki'
+
+
+    }
+}
 
 
 
@@ -167,6 +188,7 @@ mobileAboutMeSection.addEventListener('click', showSkills)
 titleContener.addEventListener('click', showMoreTxt)
 titleContener.addEventListener('click', getCV)
 titleContener.addEventListener('click', showCV)
+titleContener.addEventListener('click', showMyLinks)
 mobileNavBtnContener.addEventListener('click', hideOpenMenu)
 mobileAboutMeSection.addEventListener('click', showMyTasks)
 mobileTaskTable.addEventListener('click', openTasks)

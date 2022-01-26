@@ -162,3 +162,36 @@ main{
     margin: 0%;
     font-size: 15px;
 }
+.mobieMyLinksSection{
+    width: 100%;
+    text-align: center;
+}
+.mobileLinksTable{
+    width: 100%;
+}
+.mobileLinksTable tr th{
+    font-size: 35px;
+}
+.mobileLinksTable tr th a{
+    transition: none;
+}
+.mobileLinksTable tr th a:hover{
+    box-shadow: none;
+}
+.mobileLinksTable tr td{
+    width: 30%;
+    transition: none;
+    filter: none;
+    background-color: transparent;
+    border: none;
+}
+.mobileLinksTable tr td:hover{
+    width: 30%;
+    animation: none;
+    box-shadow: none;
+    filter: none;
+}
+.mobileLinksTable tr td p {
+    font-size: 30px;
+}
+
