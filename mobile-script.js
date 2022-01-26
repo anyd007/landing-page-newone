@@ -2,9 +2,9 @@ const mobileNavBtnContener = document.querySelector('.burger-menu');
 const btnShowMenu = document.querySelector('.show');
 const btncloseMenu = document.querySelector('.hide');
 const mobileNavUl = document.querySelector('.navUl');
-const mobileAboutMe = document.querySelector('.mobileAboutMe');
-const mobileTasks = document.querySelector('.mobileMyTasks');
-const mobileLinks = document.querySelector('.mobileLinks');
+const mobileAboutMe = document.querySelector('#mobileAboutMe');
+const mobileTasks = document.querySelector('#mobileMyTasks');
+const mobileLinks = document.querySelector('#mobileLinks');
 const titleContener = document.querySelector('.titleContener')
 const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
@@ -70,7 +70,7 @@ const hideOpenMenu = e =>{
 const showMoreTxt = (e) =>{
     moreMobileParaAboutMe.classList.add('hideTxt')
     
-    if(e.target.matches('.btnMore')){
+    if(e.target.matches('.btnMore') || e.target.matches('#mobileAboutMe')){
         moreMobileParaAboutMe.textContent =`Cześć, nazywam się Andrzej i jestem początkującym front-end developerem bez 
         doświadczenia komercyjnego. 
         Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
@@ -86,7 +86,11 @@ const showMoreTxt = (e) =>{
         btnMyTaks.classList.toggle('hideTxt')
         btnMySkills.classList.toggle('hideTxt')
         btnMyLinkns.classList.toggle('hideTxt')
-    e.target.textContent == 'o mnie' ? e.target.textContent = 'ukryj' : e.target.textContent = 'o mnie'
+        mobileNavUl.classList.remove('active');
+        btnShowMenu.style.display = 'flex';
+        btncloseMenu.style.display = 'none';
+        btnReadMore.textContent == 'o mnie' ? btnReadMore.textContent = 'ukryj' : btnReadMore.textContent = 'o mnie'
+        mobileAboutMe.textContent == 'o mnie' ? mobileAboutMe.textContent = 'ukryj' : mobileAboutMe.textContent = 'o mnie'
     }
 }
 `${moreMobileParaAboutMe.textContent}`
@@ -190,7 +194,7 @@ const showMyLinks = e =>{
 
 
 mobileAboutMeSection.addEventListener('click', showSkills)
-titleContener.addEventListener('click', showMoreTxt)
+document.body.addEventListener('click', showMoreTxt)
 titleContener.addEventListener('click', getCV)
 titleContener.addEventListener('click', showCV)
 titleContener.addEventListener('click', showMyLinks)

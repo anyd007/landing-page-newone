@@ -163,6 +163,10 @@ main{
     font-size: 15px;
 }
 .mobieMyLinksSection{
+    /* background-image: url('./obrazy/tapeta.png');
+    background-color: white;
+    background-position: center;
+    background-size: cover; */
     width: 100%;
     text-align: center;
 }
