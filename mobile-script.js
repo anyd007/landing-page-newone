@@ -85,6 +85,7 @@ const showMoreTxt = (e) =>{
         btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnMySkills.classList.toggle('hideTxt')
+        btnMyLinkns.classList.toggle('hideTxt')
     e.target.textContent == 'o mnie' ? e.target.textContent = 'ukryj' : e.target.textContent = 'o mnie'
     }
 }
@@ -100,6 +101,7 @@ const showSkills = e =>{
         btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnReadMore.classList.toggle('hideTxt')
+        btnMyLinkns.classList.toggle('hideTxt')
         btnMySkills.textContent == 'moje skile </>' ? btnMySkills.textContent = 'ukryj skile </>' : btnMySkills.textContent = 'moje skile </>'
     }
 }
@@ -122,6 +124,7 @@ let divImg = document.createElement('div')
     openModalCV.setAttribute('src', './obrazy/dokumenty/Andrzej_Gebala_CV_IT_photo.jpg')
     openModalCV.classList.add('img-style')
     openModalCV.style.margin = '0 auto'
+    openModalCV.style.width = 90+"vw"
     divImg.append(openModalCV)
     divImg.classList.add('hideTxt')
     titleContener.append(divImg)
@@ -133,7 +136,8 @@ const showCV = e =>{
         btnMySkills.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnReadMore.classList.toggle('hideTxt')
-        btnShowCV.textContent == 'zobacz moje CV' ? btnShowCV.textContent = 'zamknij moje CV' : btnShowCV.textContent = 'zobacz moje CV'
+        btnMyLinkns.classList.toggle('hideTxt')
+        btnShowCV.textContent == 'zobacz moje CV' ? btnShowCV.textContent = 'zamknij CV' : btnShowCV.textContent = 'zobacz moje CV'
     }
 }
 const showMyTasks = e =>{
@@ -145,7 +149,8 @@ const showMyTasks = e =>{
         btnShowCV.classList.toggle('hideTxt')
         btnGetCv.classList.toggle('hideTxt')
         btnReadMore.classList.toggle('hideTxt')
-        btnMyTaks.textContent == 'moje ćwiczenia </>' ? btnMyTaks.textContent = 'zamknij ćwiczenia </>' : btnMyTaks.textContent = 'moje ćwiczenia </>'
+        btnMyLinkns.classList.toggle('hideTxt')
+        btnMyTaks.textContent == 'moje ćwiczenia </>' ? btnMyTaks.textContent = 'zamknij </>' : btnMyTaks.textContent = 'moje ćwiczenia </>'
     }
 }
 const openTasks = e =>{

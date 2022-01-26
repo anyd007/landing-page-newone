@@ -126,7 +126,7 @@ main{
     display: none;
 }
 .showTxt{
-    display: flex;
+    display: inline-block;
 }
 .signature{
     margin-top: 0%;
@@ -169,6 +169,9 @@ main{
 .mobileLinksTable{
     width: 100%;
 }
+.mobieMyLinksSection h4 {
+    margin-top: -7%;
+}
 .mobileLinksTable tr th{
     font-size: 35px;
 }
@@ -186,7 +189,7 @@ main{
     border: none;
 }
 .mobileLinksTable tr td:hover{
-    width: 30%;
+    /* width: 30%; */
     animation: none;
     box-shadow: none;
     filter: none;
