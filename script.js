@@ -105,7 +105,8 @@ const scrollButton = () => {
   }
 }
 window.onload = setTimeout(()=>{
-  titleAnimation.classList.add('title-effect-show')
+  titleAnimation.classList.remove('hideTxt')
+  titleAnimation.classList.add('title-effect')
 }, 500)
 // const animationHeaderShow = () =>{
 //   titleAnimation.classList.add('title-effect-show')
