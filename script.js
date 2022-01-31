@@ -23,8 +23,11 @@ let triangleRight;
 let aboutAnimation;
 let tasksAnimation;
 let linksAnimation;
+let titleAnimation;
 let navAllTags;
 let navList;
+let mailBtn;
+let formMain;
 // mobile
 
 const main = () => {
@@ -45,25 +48,28 @@ const DOMCreateElements = () => {
   sectionTasks = document.querySelector("#my-tasks");
   sectionLinks = document.querySelector("#my-links");
   sectionContact = document.querySelector("#messagge");
+  
   messaggeInputs = document.querySelectorAll("form input");
   nameInput = document.querySelector("#name-input");
   emailInput = document.querySelector("#email-input");
   textera = document.querySelector("#leave-messagge");
   contactSendBtn = document.querySelector("#send-btn");
+  mailBtn = document.querySelector('#mailBtn');
+  phoneBtn = document.querySelector('#phoneBtn')
   scrollUpBtn = document.querySelector("#scroll-up");
   taskTable = document.querySelector("table")
   taskTableData = document.querySelectorAll("td");
   cvMainContener = document.querySelector('.my-cv');
   cvUpload = document.querySelector('#cv-upload');
   cvViev = document.querySelector('#cv-view');
-  triangleLeft = document.querySelector('#triangle-left');
-  triangleRight = document.querySelector('#triangle-right');
+  titleAnimation = document.querySelector('.title-effect')
   aboutAnimation = document.querySelector('.about-effect');
   tasksAnimation = document.querySelector('.tasks-effect');
   linksAnimation = document.querySelector('.links-effect');
   mobileMenu = document.querySelector('#mobileSideVersion');
-  
-};
+  };
+  formMain = document.querySelector('#main-form');
+
 const navEffecttRemove = () =>{
     navAllTags.forEach(el =>{
       el.style.filter = 'blur(0px)'
@@ -98,10 +104,12 @@ const scrollButton = () => {
     scrollUpBtn.style.display = "none";
   }
 }
-const animationHeaderShow = () =>{
-   triangleLeft.classList.add('triangle-left-show')
-    triangleRight.classList.add('triangle-right-show')
-  }
+window.onload = setTimeout(()=>{
+  titleAnimation.classList.add('title-effect-show')
+}, 500)
+// const animationHeaderShow = () =>{
+//   titleAnimation.classList.add('title-effect-show')
+//   }
 const aboutAnimationShow = () =>{
   let scrolled = window.scrollY
     if(scrolled > 100){
@@ -157,6 +165,27 @@ const showTask = (e) => {
     window.open('https://xenodochial-mahavira-42d0e4.netlify.app');
   }
 };
+
+let mailTitle = document.createElement('p')
+mailTitle.textContent = 'info@gebalaportfolio.pl'
+mailTitle.classList.add('mailAdress')
+mailTitle.classList.add("hideTxt")
+formMain.append(mailTitle);
+let phoneNumber = document.createElement('p')
+phoneNumber.textContent = '+48 508739899'
+phoneNumber.classList.add('phoneNumber')
+phoneNumber.classList.add("hideTxt")
+formMain.append(phoneNumber);
+    const showHideMail = (e) =>{
+   if(e.target.matches('#mailBtn')){
+  mailTitle.classList.toggle("showTxt")
+  mailBtn.textContent == 'pokaż e-mail' ? mailBtn.textContent = 'ukryj e-mail' : mailBtn.textContent = 'pokaż e-mail'
+  }
+  if(e.target.matches('#phoneBtn')){
+    phoneNumber.classList.toggle('showTxt')
+    phoneBtn.textContent == 'pokaż telefon' ? phoneBtn.textContent = 'ukryj telefon ' : phoneBtn.textContent = 'pokaż telefon'
+  }
+}
 const checkView = (mobileCheck) =>{
   let desktopAppConteiner = document.querySelector('#desktopApp');
   mobileMenu = document.querySelector('#mobileSideVersion');
@@ -183,8 +212,9 @@ const DOMCreateEvents = () => {
   taskTable.addEventListener("click", showTask);
   cvMainContener.addEventListener('click', cvTrack);
   contactSendBtn.addEventListener('click', inputCheck);
-  window.addEventListener('DOMContentLoaded', animationHeaderShow);
+  // window.addEventListener('DOMContentLoaded', setTimeout(animationHeaderShow), 2000);
   window.addEventListener('scroll', aboutAnimationShow);
+  formMain.addEventListener('click', showHideMail)
   mobileCheck.addListener(checkView) 
 };
 
