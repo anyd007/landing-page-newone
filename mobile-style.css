@@ -92,6 +92,7 @@ main{
   clip-path: polygon(45% 0, 100% 50%, 43% 100%, 0 100%, 51% 49%, 0 0);
 }
 #mobileAboutMeSection{
+    margin-bottom: 0%;
     text-align: center;
 }
 .mobileParaAboutMe{
@@ -175,6 +176,7 @@ main{
     background-color: white;
     background-position: center;
     background-size: cover; */
+    margin-bottom: 0%;
     width: 100%;
     text-align: center;
 }

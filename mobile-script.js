@@ -1,3 +1,5 @@
+const mobileSideVersion = document.querySelector('#mobileSideVersion')
+const mobileSideVersionSections = document.querySelectorAll('#mobileSideVersion section')
 const mobileNavBtnContener = document.querySelector('.burger-menu');
 const btnShowMenu = document.querySelector('.show');
 const btncloseMenu = document.querySelector('.hide');
@@ -8,7 +10,6 @@ const mobileLinks = document.querySelector('#mobileLinks');
 const titleContener = document.querySelector('.titleContener')
 const mobileAboutMeSection = document.querySelector('#mobileAboutMeSection')
 const mobileParaAboutMe = document.querySelector('.mobileParaAboutMe')
-const dots = '...'
 const mobileLanguanges = document.querySelector('.mobileLanguanges');
 const cytat = document.querySelector('.cytat')
 const signature = document.querySelector('.signature')
@@ -16,11 +17,12 @@ const closeFav = document.querySelector('.closeFavSkills')
 const mobileMyTasksSection = document.querySelector('.mobileMyTasksSection')
 const mobileTaskTable = document.querySelector('#mobileTaskTable')
 const mobieMyLinksSection = document.querySelector('.mobieMyLinksSection')
-
+console.log(mobileSideVersionSections);
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
         moreMobileParaAboutMe.classList.add('mobileParaAboutMe')
         moreMobileParaAboutMe.style.margin = '0px'
+        moreMobileParaAboutMe.classList.add('hideTxt')
         mobileAboutMeSection.append(moreMobileParaAboutMe)
 // button creator
 const btnReadMore = document.createElement('button')
@@ -68,9 +70,7 @@ const hideOpenMenu = e =>{
 
 // read more
 const showMoreTxt = (e) =>{
-    moreMobileParaAboutMe.classList.add('hideTxt')
-    
-    if(e.target.matches('.btnMore') || e.target.matches('#mobileAboutMe')){
+     if(e.target.matches('.btnMore')){
         moreMobileParaAboutMe.textContent =`Cześć, nazywam się Andrzej i jestem początkującym front-end developerem bez 
         doświadczenia komercyjnego. 
         Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
@@ -78,17 +78,14 @@ const showMoreTxt = (e) =>{
      dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
         związane z programowaniem i obsługą komputera. Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli 
         mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.`
-     moreMobileParaAboutMe.classList.toggle('showTxt')
-     cytat.classList.toggle('hideTxt')
+        moreMobileParaAboutMe.classList.toggle('showTxt')
+        cytat.classList.toggle('hideTxt')
         signature.classList.toggle('hideTxt')
         btnShowCV.classList.toggle('hideTxt')
         btnGetCv.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnMySkills.classList.toggle('hideTxt')
         btnMyLinkns.classList.toggle('hideTxt')
-        mobileNavUl.classList.remove('active');
-        btnShowMenu.style.display = 'flex';
-        btncloseMenu.style.display = 'none';
         btnReadMore.textContent == 'o mnie' ? btnReadMore.textContent = 'ukryj' : btnReadMore.textContent = 'o mnie'
         mobileAboutMe.textContent == 'o mnie' ? mobileAboutMe.textContent = 'ukryj' : mobileAboutMe.textContent = 'o mnie'
     }
@@ -185,11 +182,8 @@ const showMyLinks = e =>{
         btnReadMore.classList.toggle('hideTxt')
         btnMyTaks.classList.toggle('hideTxt')
         btnMyLinkns.textContent == 'kontakt/linki' ? btnMyLinkns.textContent = 'zamknij' : btnMyLinkns.textContent = 'kontakt/linki'
-
-
     }
 }
-
 
 
 
