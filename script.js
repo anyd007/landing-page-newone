@@ -28,6 +28,9 @@ let navAllTags;
 let navList;
 let mailBtn;
 let formMain;
+let contactPopup;
+let closeContact;
+
 // mobile
 
 const main = () => {
@@ -48,7 +51,8 @@ const DOMCreateElements = () => {
   sectionTasks = document.querySelector("#my-tasks");
   sectionLinks = document.querySelector("#my-links");
   sectionContact = document.querySelector("#messagge");
-  
+  contactPopup = document.querySelector('.contactPopup')
+  closeContact = document.querySelector('.closeContact')
   messaggeInputs = document.querySelectorAll("form input");
   nameInput = document.querySelector("#name-input");
   emailInput = document.querySelector("#email-input");
@@ -68,6 +72,7 @@ const DOMCreateElements = () => {
   linksAnimation = document.querySelector('.links-effect');
   mobileMenu = document.querySelector('#mobileSideVersion');
   };
+  desktopApp = document.querySelector('#desktopApp')
   formMain = document.querySelector('#main-form');
 
 const navEffecttRemove = () =>{
@@ -167,24 +172,19 @@ const showTask = (e) => {
   }
 };
 
-let mailTitle = document.createElement('p')
-mailTitle.textContent = 'info@gebalaportfolio.pl'
-mailTitle.classList.add('mailAdress')
-mailTitle.classList.add("hideTxt")
-formMain.append(mailTitle);
-let phoneNumber = document.createElement('p')
-phoneNumber.textContent = '+48 508739899'
-phoneNumber.classList.add('phoneNumber')
-phoneNumber.classList.add("hideTxt")
-formMain.append(phoneNumber);
     const showHideMail = (e) =>{
    if(e.target.matches('#mailBtn')){
-  mailTitle.classList.toggle("showTxt")
-  mailBtn.textContent == 'pokaż e-mail' ? mailBtn.textContent = 'ukryj e-mail' : mailBtn.textContent = 'pokaż e-mail'
+     let popupBackground = document.querySelector('.popupBackground')
+    contactPopup.classList.toggle('hideTxt')
+    popupBackground.classList.remove('hideTxt')
   }
-  if(e.target.matches('#phoneBtn')){
-    phoneNumber.classList.toggle('showTxt')
-    phoneBtn.textContent == 'pokaż telefon' ? phoneBtn.textContent = 'ukryj telefon ' : phoneBtn.textContent = 'pokaż telefon'
+}
+const closecontactPopup = e =>{
+  if(e.target.matches('.closeContact')){
+    let popupBackground = document.querySelector('.popupBackground')
+    contactPopup.classList.toggle('hideTxt')
+    popupBackground.classList.add('hideTxt')
+
   }
 }
 const checkView = (mobileCheck) =>{
@@ -195,7 +195,7 @@ const checkView = (mobileCheck) =>{
     mobileMenu.style.display ='inline-block'
   }else{
     mobileMenu.style.display ='none'
-    desktopAppConteiner.style.display='inline'
+    desktopAppConteiner.style.display='block'
   }
 }
 let mobileCheck = window.matchMedia("(max-width: 700px)")
@@ -213,7 +213,7 @@ const DOMCreateEvents = () => {
   taskTable.addEventListener("click", showTask);
   cvMainContener.addEventListener('click', cvTrack);
   contactSendBtn.addEventListener('click', inputCheck);
-  // window.addEventListener('DOMContentLoaded', setTimeout(animationHeaderShow), 2000);
+  contactPopup.addEventListener('click', closecontactPopup)
   window.addEventListener('scroll', aboutAnimationShow);
   formMain.addEventListener('click', showHideMail)
   mobileCheck.addListener(checkView) 

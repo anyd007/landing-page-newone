@@ -32,6 +32,7 @@
 
     <body>
 <div id="desktopApp">
+    <div class="popupBackground hideTxt" ></div>
         <section>
         <header>
             <div class="header-effect">
@@ -138,11 +139,15 @@
         <section class="scrollFade" id="messagge">
             <h2>zostaw wiadomość</h2>
             <form onsubmit="return false" id="main-form">
-                <div class="formBtnGroup">
-                <button id="mailBtn">pokaż e-mail</button>
-                <button id="phoneBtn">pokaż telefon</button>
+                <div class="contactPopup hideTxt">
+                    <i class="fas fa-times fa-2x closeContact"></i>
+                    <i class="fas fa-at fa-2x"></i>
+                    <h4>info@gebalaportfolio.pl</h4><br/>
+                    <i class="fas fa-phone-volume fa-2x"></i>
+                    <h4>+48 508739899</h4>
                 </div>
-                <label for="name-input">podaj swoje imię</label>
+                <button id="mailBtn">pokaż kontakt</button>
+             <label for="name-input">podaj swoje imię</label>
             <input type="text" id="name-input" name="name-input" placeholder="imię..."><br>
             <label for="email-input">podaj swój e-mail</label>
             <input type="email" id="email-input" name="email-input" placeholder="e-mail..."><br>
