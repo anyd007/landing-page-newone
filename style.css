@@ -2,9 +2,9 @@ html {
   
   scroll-behavior: smooth;
 }
-body{
+/* body{
   overflow-x: hidden;
-}
+} */
 * {
   padding: 0;
   box-sizing: border-box;
@@ -16,9 +16,9 @@ body{
 header {
   text-align: center;
 }
-.header-effect{
+/* .header-effect{
 position: relative;
-}
+} */
 h1 {
   font-size: 80px;
   margin: 0;
@@ -26,11 +26,11 @@ h1 {
 }
 
 .title-effect{
-  top: -40%;
+  top: -4%;
   z-index: -1;
   position: absolute;
-  width: 100%;
-  height: 300%;
+  width: 99%;
+  height: 110%;
   background-color: #00FFFF;
   clip-path: inset(0 0 70% 0);
   animation: fadeIn ease 3s;
@@ -74,7 +74,7 @@ header nav ul li:hover {
   opacity: 0.8;
   box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
-/* @media screen and (max-width: 756px) {
+@media screen and (max-width: 856px) {
   table header nav ul li,
   #my-links ul li a,
   tr,
@@ -85,7 +85,7 @@ header nav ul li:hover {
     text-align: center;
     margin: 10px;
   }
-} */
+}
 section {
   text-align: center;
   margin-bottom: 100px;
@@ -204,9 +204,9 @@ label {
 }
 .mailAdress{
   position: absolute;
-  left: 1%;
+  left: 4px;
   top: 14%;
-  font-size: 36px;
+  font-size: 2rem;
 }
 #phoneBtn{
   position: absolute;
@@ -218,7 +218,7 @@ label {
   position: absolute;
   right: 5%;
   top: 14%;
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 form button,
