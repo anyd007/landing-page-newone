@@ -144,14 +144,18 @@ const cvTrack = e =>{
   }
 }
 const inputCheck = ()=>{
-  nameInput.style.backgroundColor = 'white';
-  emailInput.style.backgroundColor = 'white';
+  // nameInput.value = '';
+  // emailInput.value = '';
+  // textera.value = '';
   messaggeInputs.forEach(el => {
+    // el.required = true;
     if(el.value === ''){
       el.style.backgroundColor = 'red'
+    }else{
+      el.style.backgroundColor = 'white'
     }
+    
   })};
-
 const showTask = (e) => {
   if (e.target.matches(".show-day")) {
     window.open("https://laughing-villani-8ad083.netlify.app/");
@@ -172,13 +176,11 @@ const showTask = (e) => {
   }
 };
 
-    const showHideMail = (e) =>{
-   if(e.target.matches('#mailBtn')){
+    const showHideMail = () =>{
      let popupBackground = document.querySelector('.popupBackground')
     contactPopup.classList.toggle('hideTxt')
     popupBackground.classList.remove('hideTxt')
   }
-}
 const closecontactPopup = e =>{
   if(e.target.matches('.closeContact')){
     let popupBackground = document.querySelector('.popupBackground')
@@ -201,8 +203,6 @@ const checkView = (mobileCheck) =>{
 let mobileCheck = window.matchMedia("(max-width: 700px)")
 checkView(mobileCheck) 
 
-
-
 const DOMCreateEvents = () => {
   navMain.addEventListener('mouseover', navBlur)
   navMain.addEventListener('mouseleave', navEffecttRemove)
@@ -215,7 +215,7 @@ const DOMCreateEvents = () => {
   contactSendBtn.addEventListener('click', inputCheck);
   contactPopup.addEventListener('click', closecontactPopup)
   window.addEventListener('scroll', aboutAnimationShow);
-  formMain.addEventListener('click', showHideMail)
+  mailBtn.addEventListener('click', showHideMail)
   mobileCheck.addListener(checkView) 
 };
 

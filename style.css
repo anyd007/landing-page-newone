@@ -197,12 +197,12 @@ label {
 }
 .contactPopup{
   border-radius: 10px;
-  top: -20%;
   position: absolute;
-  background-color: white;
+  background-color: rgba(243, 241, 111, 0.911);
   height: 300px;
   width: auto;
   padding: 30px;
+  opacity: 1;
   box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 1.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
   left: 50%;
   transform: translate(-50%);
@@ -219,20 +219,20 @@ label {
 }
 .popupBackground{
   position: fixed;
-  top: 0;
+  top: -5%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   backdrop-filter: blur(5px);
   z-index: 7;
 }
-/* :not(.contactPopup){
-  filter: blur(0px);
-} */
 
 #mailBtn{
-  display: block;
-  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 .mailAdress{
   position: absolute;
