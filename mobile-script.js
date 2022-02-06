@@ -17,7 +17,6 @@ const closeFav = document.querySelector('.closeFavSkills')
 const mobileMyTasksSection = document.querySelector('.mobileMyTasksSection')
 const mobileTaskTable = document.querySelector('#mobileTaskTable')
 const mobieMyLinksSection = document.querySelector('.mobieMyLinksSection')
-console.log(mobileSideVersionSections);
 // read more creator
 let moreMobileParaAboutMe = document.createElement('p')
         moreMobileParaAboutMe.classList.add('mobileParaAboutMe')
