@@ -157,7 +157,7 @@ const inputCheck = ()=>{
     
   })};
 const showTask = (e) => {
-  if (e.target.matches(".show-day")) {
+  if (e.target.matches(".react-express-heroku")) {
     window.open("https://react-node-app-db.herokuapp.com/");
   } else if (e.target.matches(".cars")) {
     window.open("https://vigilant-kilby-67c922.netlify.app/");

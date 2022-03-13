@@ -1,289 +1,485 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4M64CK1KBG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4M64CK1KBG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-4M64CK1KBG');
-</script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" >
-        <title>Andrzej Gębala Landing page</title>
-        <link rel="icon" type="image/x-icon" href="./obrazy/favicon2.png">
-       <meta name="description" content="Landing page, początkujący Front-end dev, moja wizytówka">
-        <meta name="keywords" content="landing page, wizytówka, Front-end developer, IT">
-        <meta name="author" content="Andrzej Gębala">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css?family=Allan&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-      <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
-      <!-- <style type="text/css">
+      gtag("config", "G-4M64CK1KBG");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andrzej Gębala Landing page</title>
+    <link rel="icon" type="image/x-icon" href="./obrazy/favicon2.png" />
+    <meta
+      name="description"
+      content="Landing page, początkujący Front-end dev, moja wizytówka"
+    />
+    <meta
+      name="keywords"
+      content="landing page, wizytówka, Front-end developer, IT"
+    />
+    <meta name="author" content="Andrzej Gębala" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allan&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/788debddc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <style type="text/css">
            @media only screen and (device-width: 768px) {
     }</style> -->
-      <link rel="stylesheet" href="./style.css">
-      <link rel="stylesheet" href="./mobile-style.css">
-      <style> @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); </style>
-    
-    </head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile-style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+    </style>
+  </head>
 
-    <body>
-<div id="desktopApp">
-    <div class="popupBackground hideTxt" ></div>
-        <section>
+  <body>
+    <div id="desktopApp">
+      <div class="popupBackground hideTxt"></div>
+      <section>
         <header>
-            <div class="header-effect">
-                <div class="title-effect hideTxt"></div>
-            <h1>andrzej gębala<br/> portfolio</h1>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li id="navAboutMe" class="nav-li">o mnie</li>
-                    <li id="navTasks" class="nav-li">moje ćwiczenienia</li>
-                    <li id="nav-links" class="nav-li">moje linki</li>
-                    <li id="nav-message" class="nav-li">zostaw wiadomość</li>
-                </ul>
-            </nav>
-        </header>
-        </section>
-        <section id="about">
-            <h2>o mnie</h2>
-            <div class="about-effect"></div>
-            <p><strong>Cześć, nazywam się Andrzej i jestem początkującym front-end developerem bez 
-                doświadczenia komercyjnego. 
-                Wiem, jak w życiu człowieka ważna jest determinacja i chęć 
-                dążenia do celu, dlatego nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem otwarty i nastawiony na 
-             dłuższą współpracę. Ponadto znam język angielski w stopniu komunikatywnym, w tym słownictwo branżowe 
-                związane z programowaniem i obsługą komputera. Jestem świadomy i w pełni przekonany, że chęć ciągłego rozwoju pozwoli 
-                mi osiągnąć wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End Developera.
-                </strong></p>
-                <div class="my-cv">
-                    <h4>moje cv</h4>
-                    <button id="cv-upload">pobierz</button>
-                    <button id="cv-view">zobacz</button>
-                </div>
-                <div class="my-skills">
-                    <h4>moje obecne umiejętności.....których cały czas się uczę</h4>
-                    <i class="fab skill fa-html5 fa-5x"><p>html</p></i>
-                    <i class="fab skill fa-css3-alt fa-5x"><p>css</p></i>
-                    <i class="fab skill fa-js-square fa-5x"><p>javascript</p></i>
-                    <i class="fab skill fa-react fa-5x"><p>react</p></i>
-                    <i class="fab skill fab fa-git fa-5x"> <p>git</p></i>
-                </div>
-                <p algin="right"><i><strong>"pisz kod tak, jakby gość, który go dostanie, był agresywnym psychopatą,
-                     który wie, gdzie mieszkasz."</strong></i></p>
-                                           <p align="right" style="margin-top: -30px;">Martin Golding</p>
-                
-         </section>
-        <section class="scrollFade" id="my-tasks">
-            <div>
-                <div class="tasks-effect"></div>
-            <h2>moje ćwiczenia</h2>
-            </div>
-            <table id="tasks-table">
-            <tr>
-                <td class="show-day"> 
-                    <img src="./obrazy/baza-danych-nba.jpg" alt="baza danych react express.js heroku " class="img-table show-day"><br>
-                    reactowa aplikacja bazy danych z procesem rejestracji, logowania, wprowadzaniem danych do systemu. 
-                    Aplikacja połączona z serwerem wykonanym w express js, podłączone do bazy danych mongoDB. Dodatkowo 
-                    panel administratora z możliwością weryfikacji baz danych wszystkich userów</td>
-                <td class="cars"> 
-                    <img src="./obrazy/cars.jpg" alt="ćwiczenia na obiektach i klasach" class="img-table cars" ><br>
-                    wyświetlanie zdjęcia auta oraz możliwość zmiany danych przez użytkownika oraz obliczanie kosztów trasy</td>
-                <td class="form">
-                    <img src="./obrazy/szablon-bootstrap.jpg" alt="szablon-bootstrap" class="img-table szablon-bootstrap"><br>
-                    strona wykonana przy pomocy biblioteki bootstrap</td>
-            </tr>
-            <tr>
-                <td class="lottery-game">
-                    <img src="./obrazy/lottery-game.jpg" alt="losowanie cyfry" class="img-table lottery-game"><br>
-                    gra-losowanie cyfry, gracze wskazują cyfrę, wyslosowanie wskazanej, wyświetla 
-                       za którym razem udało się trafić </td>
-                <td class="to-do">
-                <img src="./obrazy/to-do-lista.jpg" alt="lista zadań" class="img-table to-do"><br>
-                to-to lista, możliwość dodawania, edycji oraz usówania istniejących zadań</td>
-                <td class="weather-api">
-                    <img src="./obrazy/weather-API-photo.jpg" alt="aplikacja pogodowa" class="img-table weather-api"><br>
-                    obecna pogoda + temperatura odczuwalna dla danej lokalizacji, na całym świecie</td>
-            </tr>
-            <tr>
-                <td class="react-to-do">
-                    <img src="./obrazy/react-to-do.jpg" alt="reactowa lista zadań" class="img-table react-to-do"><br>
-                    lista zadań, możliwość dodawania zadań dzięki React JS ( w budowie )</td>
-                <td class="react-form">
-                    <img src="./obrazy/react-form.jpg" alt="reactowy formularz" class="img-table react-form"><br>
-                    formularz dodawania pracowników oraz ich zarobków, tworzony w React JS ( w budowie )</td>
-                <td class="form">
-                        <img src="./obrazy/form.jpg" alt="formularz" class="img-table form"><br>
-                        formularz kontaktowy z dodanyą podwójną weryfikacją pól: imie oraz e-mail</td>
-            </tr>
-            </table>
-
-        </section>
-        <section class="scrollFade" id="my-links">
-            <h2>moje linki</h2>
-            <div class="links-effect"></div>
-            <ul>
-            <li>
-                <a target="blank" href="https://github.com/anyd007">github<br>
-                    <i class="fab fa-github fa-3x"></i></a>
-            </li>
-            <li>
-                <a target="blank" href="https://www.linkedin.com/in/andrzej-gebala">linkedin<br>
-                    <i class="fab fa-linkedin fa-3x"></i></a>
-            </li>
-            <li>
-                <a target="blank" href="https://facebook.com/Andrzej0007">facebook<br>
-                    <i href="https://facebook.com/Andrzej0007" class="fab fa-facebook fa-3x"></i></a>
-            </li>
+          <div class="header-effect">
+            <div class="title-effect hideTxt"></div>
+            <h1>
+              andrzej gębala<br />
+              portfolio
+            </h1>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li id="navAboutMe" class="nav-li">o mnie</li>
+              <li id="navTasks" class="nav-li">moje ćwiczenienia</li>
+              <li id="nav-links" class="nav-li">moje linki</li>
+              <li id="nav-message" class="nav-li">zostaw wiadomość</li>
             </ul>
-        </section>
-        <section class="scrollFade" id="messagge">
-            <h2>zostaw wiadomość</h2>
-            <div class="contactPopup hideTxt">
-                <i class="fas fa-times fa-2x closeContact"></i>
-                <i class="fas fa-at fa-2x"></i>
-                <h4>info@gebalaportfolio.pl</h4><br/>
-                <i class="fas fa-phone-volume fa-2x"></i>
-                <h4>+48 508739899</h4>
-            </div>
-            <button id="mailBtn">pokaż kontakt</button>
-            <form action="https://formsubmit.io/send/gebala.andrzej1@gmail.com" method="POST" id="main-form">
-                
-             <label for="name-input">podaj swoje imię</label>
-            <input type="text" id="name-input" name="name-input" placeholder="imię..."><br>
-            <label for="email-input">podaj swój e-mail</label>
-            <input type="email" id="email-input" name="email-input" placeholder="e-mail..."><br>
-            <textarea id="leave-messagge" name="leave-messagge" placeholder="zostaw wiadomość...." ></textarea>
-            <p id="warrning"></p>
-            <input name="_redirect" type="hidden" id="name" value="https://gebalaportfolio.pl/podziekowania.html">
-            <input name="_formsubmit_id" type="text" style="display:none">
-            <button id="send-btn">wyślij</button>
-
-            </form>
-        </section>
-        <button id="scroll-up"><i class="fas fa-arrow-up fa-2x"></i></button>
-        <footer></footer>
-</div>
-        <!-- mobile sction -->
-<div id="mobileSideVersion" style="display: none">
-        <div class="mobileMenu">
-            <nav>
-                <button class="burger-menu">
-                    <i class="fas fa-bars fa-3x show"></i>
-                    <i class="fas fa-times fa-3x hide"></i>
-                </button>
-                <ul class="navUl">
-                    <li id="mobileAboutMe">o mnie</li>
-                    <li id="mobileMyTasks">moje ćwiczenia</li>
-                    <li id="mobileLinks">moje linki</li>
-                </ul>
-            </nav>
+          </nav>
+        </header>
+      </section>
+      <section id="about">
+        <h2>o mnie</h2>
+        <div class="about-effect"></div>
+        <p>
+          <strong
+            >Cześć, nazywam się Andrzej i jestem początkującym front-end
+            developerem bez doświadczenia komercyjnego. Wiem, jak w życiu
+            człowieka ważna jest determinacja i chęć dążenia do celu, dlatego
+            nie boję się nowych wyzwań. Potrafię pracować w zespole, jestem
+            otwarty i nastawiony na dłuższą współpracę. Ponadto znam język
+            angielski w stopniu komunikatywnym, w tym słownictwo branżowe
+            związane z programowaniem i obsługą komputera. Jestem świadomy i w
+            pełni przekonany, że chęć ciągłego rozwoju pozwoli mi osiągnąć
+            wyznaczony przeze mnie cel, czyli pracę na stanowisku Front-End
+            Developera.
+          </strong>
+        </p>
+        <div class="my-cv">
+          <h4>moje cv</h4>
+          <button id="cv-upload">pobierz</button>
+          <button id="cv-view">zobacz</button>
         </div>
-  <main>
+        <div class="my-skills">
+          <h4>moje obecne umiejętności.....których cały czas się uczę</h4>
+          <i class="fab skill fa-html5 fa-5x"><p>html</p></i>
+          <i class="fab skill fa-css3-alt fa-5x"><p>css</p></i>
+          <i class="fab skill fa-js-square fa-5x"><p>javascript</p></i>
+          <i class="fab skill fa-react fa-5x"><p>react</p></i>
+          <i class="fab skill fa-node-js fa-5x"><p>express js(podstawy)</p></i>
+          <i class="fab skill fab fa-git fa-5x"> <p>git</p></i>
+        </div>
+        <p algin="right">
+          <i>"pisz kod tak, jakby gość, który go dostanie, był agresywnym
+              psychopatą, który wie, gdzie mieszkasz."
+          </i></p>
+        <p align="right" style="margin-top: -30px">Martin Golding</p>
+      </section>
+      <section class="scrollFade" id="my-tasks">
+        <div>
+          <div class="tasks-effect"></div>
+          <h2>moje ćwiczenia</h2>
+        </div>
+        <table id="tasks-table">
+          <tr>
+            <td class="react-express-heroku">
+              <img
+                src="./obrazy/baza-danych-nba.jpg"
+                alt="baza danych react express.js heroku "
+                class="img-table react-express-heroku"
+              /><br />
+              reactowa aplikacja bazy danych z procesem rejestracji, logowania,
+              wprowadzaniem danych do systemu. Aplikacja połączona z serwerem
+              wykonanym w express js, podłączone do bazy danych mongoDB.
+              Dodatkowo panel administratora z możliwością weryfikacji baz
+              danych wszystkich userów
+            </td>
+            <td class="cars">
+              <img
+                src="./obrazy/cars.jpg"
+                alt="ćwiczenia na obiektach i klasach"
+                class="img-table cars"
+              /><br />
+              wyświetlanie zdjęcia auta oraz możliwość zmiany danych przez
+              użytkownika oraz obliczanie kosztów trasy
+            </td>
+            <td class="szablon-bootstrap">
+              <img
+                src="./obrazy/szablon-bootstrap.jpg"
+                alt="szablon-bootstrap"
+                class="img-table szablon-bootstrap"
+              /><br />
+              strona wykonana przy pomocy biblioteki bootstrap
+            </td>
+          </tr>
+          <tr>
+            <td class="lottery-game">
+              <img
+                src="./obrazy/lottery-game.jpg"
+                alt="losowanie cyfry"
+                class="img-table lottery-game"
+              /><br />
+              gra-losowanie cyfry, gracze wskazują cyfrę, wyslosowanie
+              wskazanej, wyświetla za którym razem udało się trafić
+            </td>
+            <td class="to-do">
+              <img
+                src="./obrazy/to-do-lista.jpg"
+                alt="lista zadań"
+                class="img-table to-do"
+              /><br />
+              to-to lista, możliwość dodawania, edycji oraz usówania
+              istniejących zadań
+            </td>
+            <td class="weather-api">
+              <img
+                src="./obrazy/weather-API-photo.jpg"
+                alt="aplikacja pogodowa"
+                class="img-table weather-api"
+              /><br />
+              obecna pogoda + temperatura odczuwalna dla danej lokalizacji, na
+              całym świecie
+            </td>
+          </tr>
+          <tr>
+            <td class="react-to-do">
+              <img
+                src="./obrazy/react-to-do.jpg"
+                alt="reactowa lista zadań"
+                class="img-table react-to-do"
+              /><br />
+              lista zadań, możliwość dodawania zadań dzięki React JS ( w budowie
+              )
+            </td>
+            <td class="react-form">
+              <img
+                src="./obrazy/react-form.jpg"
+                alt="reactowy formularz"
+                class="img-table react-form"
+              /><br />
+              formularz dodawania pracowników oraz ich zarobków, tworzony w
+              React JS ( w budowie )
+            </td>
+            <td class="form">
+              <img
+                src="./obrazy/form.jpg"
+                alt="formularz"
+                class="img-table form"
+              /><br />
+              formularz kontaktowy z dodanyą podwójną weryfikacją pól: imie oraz
+              e-mail
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="scrollFade" id="my-links">
+        <h2>moje linki</h2>
+        <div class="links-effect"></div>
+        <ul>
+          <li>
+            <a target="blank" href="https://github.com/anyd007"
+              >github<br />
+              <i class="fab fa-github fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a target="blank" href="https://www.linkedin.com/in/andrzej-gebala"
+              >linkedin<br />
+              <i class="fab fa-linkedin fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a target="blank" href="https://facebook.com/Andrzej0007"
+              >facebook<br />
+              <i
+                href="https://facebook.com/Andrzej0007"
+                class="fab fa-facebook fa-3x"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="scrollFade" id="messagge">
+        <h2>zostaw wiadomość</h2>
+        <div class="contactPopup hideTxt">
+          <i class="fas fa-times fa-2x closeContact"></i>
+          <i class="fas fa-at fa-2x"></i>
+          <h4>info@gebalaportfolio.pl</h4>
+          <br />
+          <i class="fas fa-phone-volume fa-2x"></i>
+          <h4>+48 508739899</h4>
+        </div>
+        <button id="mailBtn">pokaż kontakt</button>
+        <form
+          action="https://formsubmit.io/send/gebala.andrzej1@gmail.com"
+          method="POST"
+          id="main-form"
+        >
+          <label for="name-input">podaj swoje imię</label>
+          <input
+            type="text"
+            id="name-input"
+            name="name-input"
+            placeholder="imię..."
+          /><br />
+          <label for="email-input">podaj swój e-mail</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email-input"
+            placeholder="e-mail..."
+          /><br />
+          <textarea
+            id="leave-messagge"
+            name="leave-messagge"
+            placeholder="zostaw wiadomość...."
+          ></textarea>
+          <p id="warrning"></p>
+          <input
+            name="_redirect"
+            type="hidden"
+            id="name"
+            value="https://gebalaportfolio.pl/podziekowania.html"
+          />
+          <input name="_formsubmit_id" type="text" style="display: none" />
+          <button id="send-btn">wyślij</button>
+        </form>
+      </section>
+      <button id="scroll-up"><i class="fas fa-arrow-up fa-2x"></i></button>
+      <footer></footer>
+    </div>
+    <!-- mobile sction -->
+    <div id="mobileSideVersion" style="display: none">
+      <div class="mobileMenu">
+        <nav>
+          <button class="burger-menu">
+            <i class="fas fa-bars fa-3x show"></i>
+            <i class="fas fa-times fa-3x hide"></i>
+          </button>
+          <ul class="navUl">
+            <li id="mobileAboutMe">o mnie</li>
+            <li id="mobileMyTasks">moje ćwiczenia</li>
+            <li id="mobileLinks">moje linki</li>
+          </ul>
+        </nav>
+      </div>
+      <main>
         <div class="titleContener">
-            <div class="mainGradient"></div>
-            <h1 class='h1Title'>portfolio andrzej gębala</h1>
+          <div class="mainGradient"></div>
+          <h1 class="h1Title">portfolio andrzej gębala</h1>
         </div>
-   <section id="mobileAboutMeSection">
-        <div class="mobileLanguanges hideTxt">
+        <section id="mobileAboutMeSection">
+          <div class="mobileLanguanges hideTxt">
             <div class="mobile-my-skills">
-                <i class="fas fa-times fa-2x closeFavSkills"></i>
-                <h4 class="mobileSkillsTitle">moje obecne umiejętności, które cały czas doskonale :)</h4>
-                <i class="fab mobileSkill fa-html5 fa-4x"><p>html</p></i>
-                <i class="fab mobileSkill fa-css3-alt fa-4x"><p>css</p></i>
-                <i class="fab mobileSkill fa-js-square fa-4x"><p>js</p></i>
-                <i class="fab mobileSkill fa-react fa-4x"><p>react</p></i>
-                <i class="fab mobileSkill fab fa-git fa-4x"> <p>git</p></i>
+              <i class="fas fa-times fa-2x closeFavSkills"></i>
+              <h4 class="mobileSkillsTitle">
+                moje obecne umiejętności, które cały czas doskonale :)
+              </h4>
+              <i class="fab mobileSkill fa-html5 fa-4x"><p>html</p></i>
+              <i class="fab mobileSkill fa-css3-alt fa-4x"><p>css</p></i>
+              <i class="fab mobileSkill fa-js-square fa-4x"><p>js</p></i>
+              <i class="fab mobileSkill fa-react fa-4x"><p>react</p></i>
+              <i class="fab mobileSkill fab fa-git fa-4x"> <p>git</p></i>
             </div>
-        </div>
-        <p class="cytat">"pisz kod tak, jakby gość,który go dostanie,był agresywnym psychopatą,który wie, 
-            gdzie mieszkasz...."</p>
-        <p class="signature">Martin Golding</p>
-        <p class="mobileParaAboutMe"></p>
-   </section>
-   <section class="mobileMyTasksSection hideTxt">
-       <!-- <h4>ćwiczenia nie są stworzone jako "mobile-first", jeżeli oglądaasz na telefonie, zalecam używanie pozycji horyzontalnej :)</h4> -->
-       <table id="mobileTaskTable">
-           <tr class="mobile-tr">
-               <td class="mobile-td cars">
-                   <p class="mobile-description cars">wyświetlanie zdjęcia auta oraz możliwość zmiany danych przez użytkownika oraz obliczanie kosztów trasy</p>
-                <img src="./obrazy/cars.jpg" alt="ćwiczenia na obiektach i klasach" class="mobile-img-table cars" >
-               </td>
-               <td class="mobile-td form">
-                   <p class="mobile-description form">formularz kontaktowy z dodanyą podwójną weryfikacją pól: imie oraz e-mail</p>
-                <img src="./obrazy/form.jpg" alt="formularz" class="mobile-img-table form">
-               </td>
-           </tr>
-           <tr>
-               <td class="mobile-td to-do">
-                   <p class="mobile-description to-do">to-to lista, możliwość dodawania, edycji oraz usówania istniejących zadań</p>
-                <img src="./obrazy/to-do-lista.jpg" alt="lista zadań" class="mobile-img-table to-do">
-               </td>
-               <td class="mobile-td lottery-game">
-                   <p class="mobile-description lottery-game">gra-losowanie cyfry, gracze wskazują cyfrę, wyslosowanie wskazanej, wyświetla 
-                       za którym razem udało się trafić </p>
-                <img src="./obrazy/lottery-game.jpg" alt="losowanie cyfry" class="mobile-img-table lottery-game">
-               </td>
-           </tr>
-           <tr>
-               <td class="mobile-td weather-api">
-                   <p class="mobile-description weather-api">obecna pogoda + temperatura odczuwalna dla danej lokalizacji, na całym świecie</p>
-                <img src="./obrazy/weather-API-photo.jpg" alt="aplikacja pogodowa" class="mobile-img-table weather-api">
-               </td>
-               <td class="mobile-td react-to-do">
-                   <p class="mobile-description react-to-do">lista zadań, możliwość dodawania zadań dzięki React JS ( w budowie )</p>
-                <img src="./obrazy/react-to-do.jpg" alt="reactowa lista zadań" class="mobile-img-table react-to-do">
-               </td>
-           </tr>
-           <tr>
-               <td class="mobile-td react-form">
-                   <p class="mobile-description react-form">formularz dodawania pracowników oraz ich zarobków, tworzony w React JS ( w budowie )</p>
-                   <img src="./obrazy/react-form.jpg" alt="reactowy formularz" class="mobile-img-table react-form">
-               </td>
-           </tr>
-       </table>
-   </section>
-   <section class="mobieMyLinksSection hideTxt">
-    <!-- <h2>moje linki</h2> -->
-    <h4>e-mail</h4>
-    <p style="font-size: 35px; margin-bottom: 9%; border: 1px solid black;"><a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a></p>
-    <table class="mobileLinksTable">
-       <tr>
-            <th>
+          </div>
+          <p class="cytat">
+            "pisz kod tak, jakby gość,który go dostanie,był agresywnym
+            psychopatą,który wie, gdzie mieszkasz...."
+          </p>
+          <p class="signature">Martin Golding</p>
+          <p class="mobileParaAboutMe"></p>
+        </section>
+        <section class="mobileMyTasksSection hideTxt">
+          <h2 style="font-size: 20px;">ćwiczenia nie są stworzone jako "mobile-first", jeżeli oglądaasz na telefonie, zalecam używanie pozycji horyzontalnej :)</h2>
+          <table id="mobileTaskTable">
+            <tr class="mobile-tr">
+              <td class="mobile-td react-express-heroku">
+                <p class="mobile-description react-express-heroku">
+                reactowa aplikacja bazy danych z procesem rejestracji, logowania,
+                wprowadzaniem danych do systemu. Aplikacja połączona z serwerem
+                wykonanym w express js, podłączone do bazy danych mongoDB.
+                Dodatkowo panel administratora z możliwością weryfikacji baz
+                danych wszystkich userów </p>
+                <img
+                src="./obrazy/baza-danych-nba.jpg"
+                alt="baza danych react express.js heroku "
+                class="mobile-img-table react-express-heroku"
+              />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-td to-do">
+                <p class="mobile-description to-do">
+                  to-to lista, możliwość dodawania, edycji oraz usówania
+                  istniejących zadań
+                </p>
+                <img
+                  src="./obrazy/to-do-lista.jpg"
+                  alt="lista zadań"
+                  class="mobile-img-table to-do"
+                />
+              </td>
+              <td class="mobile-td lottery-game">
+                <p class="mobile-description lottery-game">
+                  gra-losowanie cyfry, gracze wskazują cyfrę, wyslosowanie
+                  wskazanej, wyświetla za którym razem udało się trafić
+                </p>
+                <img
+                  src="./obrazy/lottery-game.jpg"
+                  alt="losowanie cyfry"
+                  class="mobile-img-table lottery-game"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-td weather-api">
+                <p class="mobile-description weather-api">
+                  obecna pogoda + temperatura odczuwalna dla danej lokalizacji,
+                  na całym świecie
+                </p>
+                <img
+                  src="./obrazy/weather-API-photo.jpg"
+                  alt="aplikacja pogodowa"
+                  class="mobile-img-table weather-api"
+                />
+              </td>
+              <td class="mobile-td react-to-do">
+                <p class="mobile-description react-to-do">
+                  lista zadań, możliwość dodawania zadań dzięki React JS ( w
+                  budowie )
+                </p>
+                <img
+                  src="./obrazy/react-to-do.jpg"
+                  alt="reactowa lista zadań"
+                  class="mobile-img-table react-to-do"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-td react-form">
+                <p class="mobile-description react-form">
+                  formularz dodawania pracowników oraz ich zarobków, tworzony w
+                  React JS ( w budowie )
+                </p>
+                <img
+                  src="./obrazy/react-form.jpg"
+                  alt="reactowy formularz"
+                  class="mobile-img-table react-form"
+                />
+              </td>
+              <td class="mobile-td cars">
+                <p class="mobile-description cars">
+                  wyświetlanie zdjęcia auta oraz możliwość zmiany danych przez
+                  użytkownika oraz obliczanie kosztów trasy
+                </p>
+                <img
+                  src="./obrazy/cars.jpg"
+                  alt="ćwiczenia na obiektach i klasach"
+                  class="mobile-img-table cars"
+                />
+              </td>
+            </tr>
+            <tr>
+                <td class="mobile-td szablon-bootstrap">
+                  <p class="mobile-description">strona wykonana przy pomocy biblioteki bootstrap</p>
+                    <img
+                    src="./obrazy/szablon-bootstrap.jpg"
+                    alt="szablon-bootstrap"
+                    class="mobile-img-table szablon-bootstrap"
+                  />
+                  </td>
+                </tr>
+            </tr>
+          </table>
+        </section>
+        <section class="mobieMyLinksSection hideTxt">
+          <!-- <h2>moje linki</h2> -->
+          <h4>e-mail</h4>
+          <p
+            style="font-size: 35px; margin-bottom: 9%; border: 1px solid black"
+          >
+            <a href="mailto:info@gebalaportfolio.pl">info@gebalaportfolio.pl</a>
+          </p>
+          <table class="mobileLinksTable">
+            <tr>
+              <th>
                 <a target="blank" href="https://github.com/anyd007">github</a>
-            </th>
-            <th>
-                <a target="blank" href="https://www.linkedin.com/in/andrzej-gebala">linkedin</a>
-            </th>
-            <th>
-                <a target="blank" href="https://facebook.com/Andrzej0007">facebook</a>
-            </th>
-        </tr>
-        <tr style="line-height: 130px;">
-            <td>
+              </th>
+              <th>
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/andrzej-gebala"
+                  >linkedin</a
+                >
+              </th>
+              <th>
+                <a target="blank" href="https://facebook.com/Andrzej0007"
+                  >facebook</a
+                >
+              </th>
+            </tr>
+            <tr style="line-height: 130px">
+              <td>
                 <a target="blank" href="https://github.com/anyd007">
-                    <i class="fab fa-github fa-4x"></i></a>
-            </td>
-            <td>
-                <a target="blank" href="https://www.linkedin.com/in/andrzej-gebala">
-                    <i class="fab fa-linkedin fa-4x"></i></a>
-            </td>
-            <td>
+                  <i class="fab fa-github fa-4x"></i
+                ></a>
+              </td>
+              <td>
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/andrzej-gebala"
+                >
+                  <i class="fab fa-linkedin fa-4x"></i
+                ></a>
+              </td>
+              <td>
                 <a target="blank" href="https://facebook.com/Andrzej0007">
-                    <i class="fab fa-facebook fa-4x"></i></a>
-            </td>
-        </tr>
-    </table>
-    <h4>telefon</h4>
-    <p style="font-size: 35px; margin: 1%; border: 1px solid black;"><a href="tel:+48508739899">508739899</a></p>
-   </section>
-  </main>
-</div>
+                  <i class="fab fa-facebook fa-4x"></i
+                ></a>
+              </td>
+            </tr>
+          </table>
+          <h4>telefon</h4>
+          <p style="font-size: 35px; margin: 1%; border: 1px solid black">
+            <a href="tel:+48508739899">508739899</a>
+          </p>
+        </section>
+      </main>
+    </div>
     <script src="./script.js"></script>
-        <script src='./mobile-script.js'></script>
-    </body>
+    <script src="./mobile-script.js"></script>
+  </body>
 </html>

@@ -95,7 +95,7 @@ h2 {
   width: 100%;
 }
 .skill{
-  width: 20%;
+  width: 16%;
   float: left;
 }
 h4{
@@ -146,8 +146,8 @@ clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)
 }
 #about p {
   margin: 0 auto;
-  width: 70%;
-  margin-bottom: 30px;
+  width: 85%;
+  margin-bottom: 40px;
   font-size: 35px;
 }
 .about-effect{
