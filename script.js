@@ -173,6 +173,8 @@ const showTask = (e) => {
     window.open("https://sharp-jackson-d396f4.netlify.app/");
   }else if (e.target.matches('.react-form')) {
     window.open('https://xenodochial-mahavira-42d0e4.netlify.app');
+  }else if (e.target.matches(".szablon-bootstrap")) {
+    window.open('https://gallant-heisenberg-05c478.netlify.app')
   }
 };
 
